@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 744975fe78d37d642b9d373f7f69de39
+timeCreated: 1488289991
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: elektra
+  fontNames:
+  - elektra
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
