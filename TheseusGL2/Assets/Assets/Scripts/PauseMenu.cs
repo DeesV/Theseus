@@ -8,7 +8,6 @@ public class PauseMenu : MonoBehaviour {
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
 
-    
 
     void Awake ()
     {

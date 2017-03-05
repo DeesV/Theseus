@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-	void Update () {
-
+    //public GameObject bgImagePanel;
+    //public GameObject titleScreenPanel;
+    //public GameObject pressEnterPanel;
+    
+    //Only needed when I make a complete MainMenu with options etc
+    /*void Awake ()
+    {
+        bgImagePanel.SetActive(true);
+        titleScreenPanel.SetActive(true);
+        pressEnterPanel.SetActive(true);
+    }*/
+	void Update ()
+    {
         if (Input.GetButtonDown("Enter"))
         {
             SceneManager.LoadScene("ArneScene2");
