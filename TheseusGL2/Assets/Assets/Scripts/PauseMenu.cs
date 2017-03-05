@@ -5,34 +5,43 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
 
-    GameObject pauseMenuPanel;
+    public GameObject pauseMenuPanel;
+    public GameObject hudPanel;
+
     
 
     void Awake ()
     {
-        //pausemenu off
+        pauseMenuPanel.SetActive(false);
     }
     void Update ()
     {
         if (Input.GetButtonDown("Escape"))
         {
-            //turn pausemenu on
-            Time.timeScale = 0;
+            if (pauseMenuPanel.activeSelf)
+            {
+                pauseMenuPanel.SetActive(false);
+                Time.timeScale = 1;
+            }
+            else
+            {
+                pauseMenuPanel.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
     public void ResumeGame ()
     {
-        //turn pausemenu off
+        pauseMenuPanel.SetActive(false);
         Time.timeScale = 1;
     }
     public void Settings ()
     {
-        //turn pausemenu off
-        
+        pauseMenuPanel.SetActive(false);
     }
     public void MainMenu ()
     {
-        //turn pausemenu off
+        pauseMenuPanel.SetActive(false);
         SceneManager.LoadScene("ArneScene");
         Time.timeScale = 1;
     }
