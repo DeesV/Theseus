@@ -1,16 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//DIT SCRIPT STAAT OP DE PLAYER, CAMERA IS CHILD VAN EEN EMPTYGAMEOBJECT DIE EEN CHILD IS VAN DE PLAYER.
 public class BaseMovement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+    Vector3 moveVector;
+
+    public enum MoveDirection {
+        Forward,
+        Backward,
+        Left,
+        Right,
+        Idle
+    }
+
+    public float moveSpeed;
+    public float camSpeed;
+    public float jumpCastDistance;
+    public float jumpHeigth;
+
+    public MoveDirection moveDirection;
+
+    void Start() {
+    }
+
+   
+
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void FixedUpdate () {
+        Movement();
+        //transform.position = transform.position += moveVector * Time.deltaTime;
+
+    }
+        
+    void Movement() {
+
+        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed);
+        transform.Rotate(0, Input.GetAxis("Mouse X") * Time.deltaTime * camSpeed, 0);
+
+        if(Physics.Raycast(transform.position, -transform.up, jumpCastDistance)) {
+            if (Input.GetButtonDown("Jump")) {
+                transform.position += new Vector3(0, 1 * Time.deltaTime * jumpHeigth, 0);
+            }
+        }
+
+        /*var x = Input.GetAxis("Horizontal") * Time.deltaTime * 20;
+        var z = Input.GetAxis("Vertical") * Time.deltaTime * 20;
+
+        transform.Translate(x, 0, 0);
+        transform.Translate(0, 0, z);
+
+        switch (moveDirection) {
+            case MoveDirection.Forward:
+                moveVector.z = 20;
+                moveVector.x = 0;
+                break;
+            case MoveDirection.Backward:
+                moveVector.z = -20;
+                moveVector.x = 0;
+                break;
+            case MoveDirection.Left:
+                moveVector.x =- 20;
+                moveVector.z = 0;
+                break;
+            case MoveDirection.Right:
+                moveVector.x = 20;
+                moveVector.z = 0;
+                break;
+            case MoveDirection.Idle:
+                moveVector.x = 0;
+                moveVector.z = 0;
+                break;
+
+        }*/
+    }
 }
