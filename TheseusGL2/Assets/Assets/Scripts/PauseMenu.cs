@@ -32,6 +32,12 @@ public class PauseMenu : MonoBehaviour {
                 pauseMenuPanel.SetActive(false);
                 Time.timeScale = 1;
             }
+            if (settingsMenuPanel.activeSelf)
+            {
+                mainMenuPanel.SetActive(false);
+                pauseMenuPanel.SetActive(true);
+                settingsMenuPanel.SetActive(false);
+            }
             if (mainMenuPanel.activeSelf)
             {
                 mainMenuPanel.SetActive(false);
