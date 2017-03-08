@@ -60,7 +60,7 @@ public class PauseMenu : MonoBehaviour {
     {
         mainMenuPanel.SetActive(true);
         pauseMenuPanel.SetActive(false);
-    }
+    }   
     public void MainMenuYes ()
     {
         SceneManager.LoadScene("ArneScene");
