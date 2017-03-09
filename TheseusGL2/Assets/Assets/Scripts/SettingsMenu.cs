@@ -4,13 +4,30 @@ using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject pauseMenuPanel;
+    public GameObject hudPanel;
+    public GameObject settingsMenuPanel;
+    public GameObject mainMenuPanel;
+
+
+    public void SettingsBack ()
+    {
+        settingsMenuPanel.SetActive(false);
+    }
+    public void Sound ()
+    {
+
+    }
+    public void Keybindings ()
+    {
+
+    }
+    public void ControlSettings ()
+    {
+
+    }
+    public void GameSettings ()
+    {
+
+    }
 }
