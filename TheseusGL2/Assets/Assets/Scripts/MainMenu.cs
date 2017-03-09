@@ -29,10 +29,12 @@ public class MainMenu : MonoBehaviour {
             if (settingsPanel.activeSelf)
             {
                 settingsPanel.SetActive(false);
+                titleScreenPanel.SetActive(true);
             }
             if (creditPanel.activeSelf)
             {
                 creditPanel.SetActive(false);
+                titleScreenPanel.SetActive(true);
             }
         }//to be able to press enter to play
         /*if (Input.GetButtonDown("Enter"))
@@ -47,6 +49,7 @@ public class MainMenu : MonoBehaviour {
     public void Settings ()
     {
         settingsPanel.SetActive(true);
+        titleScreenPanel.SetActive(false);
     }
     public void Credits ()
     {

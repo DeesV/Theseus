@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour {
         mainMenuPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         settingsMenuPanel.SetActive(false);
+        hudPanel.SetActive(true);
         
     }
     void Update ()
@@ -30,6 +31,7 @@ public class PauseMenu : MonoBehaviour {
             else if (pauseMenuPanel.activeSelf)
             {
                 pauseMenuPanel.SetActive(false);
+                hudPanel.SetActive(true);
                 Time.timeScale = 1;
             }
             if (settingsMenuPanel.activeSelf)
@@ -48,6 +50,7 @@ public class PauseMenu : MonoBehaviour {
     public void ResumeGame ()
     {
         pauseMenuPanel.SetActive(false);
+        hudPanel.SetActive(true);
         Time.timeScale = 1;
     }
     public void Settings ()
