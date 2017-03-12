@@ -29,18 +29,30 @@ public class SettingsMenu : MonoBehaviour {
     }
     public void Sound ()
     {
-
+        soundOptionsPanel.SetActive(true);
+        keyBindingsPanel.SetActive(false);
+        controlSettingsPanel.SetActive(false);
+        gameSettingsPanel.SetActive(false);
     }
     public void Keybindings ()
     {
-
+        soundOptionsPanel.SetActive(false);
+        keyBindingsPanel.SetActive(true);
+        controlSettingsPanel.SetActive(false);
+        gameSettingsPanel.SetActive(false);
     }
     public void ControlSettings ()
     {
-
+        soundOptionsPanel.SetActive(false);
+        keyBindingsPanel.SetActive(false);
+        controlSettingsPanel.SetActive(true);
+        gameSettingsPanel.SetActive(false);
     }
     public void GameSettings ()
     {
-
+        soundOptionsPanel.SetActive(false);
+        keyBindingsPanel.SetActive(false);
+        controlSettingsPanel.SetActive(false);
+        gameSettingsPanel.SetActive(true);
     }
 }
