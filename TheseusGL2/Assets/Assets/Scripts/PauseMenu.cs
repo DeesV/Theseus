@@ -8,11 +8,14 @@ public class PauseMenu : MonoBehaviour {
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
-    public GameObject mainMenuPanel;            //if you press main menu
+    public GameObject mainMenuPanel;//if you press main menu
 
+    public CursorLockMode cursorMode;
 
     void Awake ()
     {
+        //Cursor.visible = (CursorLockMode.Locked != cursorMode);
+        //Cursor.lockState = wantedMode = CursorLockMode.None
         mainMenuPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         settingsMenuPanel.SetActive(false);
