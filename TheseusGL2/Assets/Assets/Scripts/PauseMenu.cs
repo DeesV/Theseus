@@ -9,13 +9,13 @@ public class PauseMenu : MonoBehaviour {
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
     public GameObject mainMenuPanel;//if you press main menu
+    bool menuCheck;
 
-    public CursorLockMode cursorMode;
 
     void Awake ()
     {
         //Cursor.visible = (CursorLockMode.Locked != cursorMode);
-        //Cursor.lockState = wantedMode = CursorLockMode.None
+        Cursor.lockState = CursorLockMode.Locked;
         mainMenuPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         settingsMenuPanel.SetActive(false);
@@ -28,14 +28,14 @@ public class PauseMenu : MonoBehaviour {
         {
             if (!pauseMenuPanel.activeSelf)
             {
+                Cursor.lockState = CursorLockMode.Confined;
                 pauseMenuPanel.SetActive(true);
                 Time.timeScale = 0;
+                print("hello " + Cursor.lockState);
             }
             else if (pauseMenuPanel.activeSelf)
             {
-                pauseMenuPanel.SetActive(false);
-                hudPanel.SetActive(true);
-                Time.timeScale = 1;
+                ResumeGame();
             }
             if (settingsMenuPanel.activeSelf)
             {
@@ -52,6 +52,7 @@ public class PauseMenu : MonoBehaviour {
     }
     public void ResumeGame ()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenuPanel.SetActive(false);
         hudPanel.SetActive(true);
         Time.timeScale = 1;

@@ -14,7 +14,7 @@ public class SettingsMenu : MonoBehaviour {
     public GameObject controlSettingsPanel;
     public GameObject gameSettingsPanel;
 
-    public CursorLockMode cursorMode;
+    //public CursorLockMode cursorMode;
 
     void Awake ()
     {
@@ -29,7 +29,7 @@ public class SettingsMenu : MonoBehaviour {
     public void SettingsBack ()
     {
         //Cursor.lockState = wantedMode = CursorLockMode.None
-        //Cursor.lockState = cursorMode;
+        //Cursor.lockState = CursorLockMode.Locked;
         settingsMenuPanel.SetActive(false);
         pauseMenuPanel.SetActive(true);
     }
