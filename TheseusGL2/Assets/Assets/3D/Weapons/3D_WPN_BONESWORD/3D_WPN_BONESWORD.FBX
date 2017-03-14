@@ -10,11 +10,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2017
 		Month: 3
-		Day: 9
-		Hour: 8
-		Minute: 48
-		Second: 36
-		Millisecond: 445
+		Day: 14
+		Hour: 13
+		Minute: 33
+		Second: 59
+		Millisecond: 39
 	}
 	Creator: "FBX SDK/FBX Plugins version 2015.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -30,29 +30,29 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_WPN_BONESWORD.FBX"
-			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_WPN_BONESWORD.FBX"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\Theseus\TheseusGL2\Assets\Assets\3D\Weapons\3D_WPN_BONESWORD\3D_WPN_BONESWORD.FBX"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\Theseus\TheseusGL2\Assets\Assets\3D\Weapons\3D_WPN_BONESWORD\3D_WPN_BONESWORD.FBX"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2014"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "09/03/2017 07:48:36.442"
-			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\3D_WPN_BONESWORD.FBX"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "14/03/2017 12:33:58.995"
+			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\Theseus\TheseusGL2\Assets\Assets\3D\Weapons\3D_WPN_BONESWORD\3D_WPN_BONESWORD.FBX"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2014"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "09/03/2017 07:48:36.442"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "14/03/2017 12:33:58.995"
 		}
 	}
 }
 GlobalSettings:  {
 	Version: 1000
 	Properties70:  {
-		P: "UpAxis", "int", "Integer", "",2
+		P: "UpAxis", "int", "Integer", "",1
 		P: "UpAxisSign", "int", "Integer", "",1
-		P: "FrontAxis", "int", "Integer", "",1
-		P: "FrontAxisSign", "int", "Integer", "",-1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
 		P: "CoordAxis", "int", "Integer", "",0
 		P: "CoordAxisSign", "int", "Integer", "",1
 		P: "OriginalUpAxis", "int", "Integer", "",2
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2140578944, "", "Scene" {
+	Document: 1963276848, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -226,7 +226,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2400238080, "Geometry::", "Mesh" {
+	Geometry: 1764130080, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.568627450980392,0.109803921568627,0.694117647058824
 		}
@@ -445,14 +445,17 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2407158448, "Model::BoneSword", "Mesh" {
+	Model: 2234778736, "Model::BoneSword", "Mesh" {
 		Version: 232
 		Properties70:  {
+			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
+			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "GeometricRotation", "Vector3D", "Vector", "",-89.9999847412109,0,0
+			P: "GeometricScaling", "Vector3D", "Vector", "",0.643854677677155,0.64385449886322,0.64385449886322
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",70.8203735351563,-1.53714474010686e-014,11.247353553772
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",90.0000025044781,-0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",53.327205657959,11.247353553772,1.85955478717182e-014
 			P: "MaxHandle", "int", "Integer", "UH",7
 		}
 		Shading: T
@@ -466,11 +469,11 @@ Objects:  {
 Connections:  {
 	
 	;Model::BoneSword, Model::RootNode
-	C: "OO",2407158448,0
+	C: "OO",2234778736,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1835587904,2405145920
+	C: "OO",2237653776,2236795696
 	
 	;Geometry::, Model::BoneSword
-	C: "OO",2400238080,2407158448
+	C: "OO",1764130080,2234778736
 }
