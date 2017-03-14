@@ -6,6 +6,9 @@ public class BaseMovement : MonoBehaviour {
 
     Vector3 moveVector;
 
+    private Vector3 moveDirect = Vector3.zero;
+    public float jumpSpeed = 4.5f;
+
     public enum MoveDirection {
         Forward,
         Backward,
@@ -38,9 +41,10 @@ public class BaseMovement : MonoBehaviour {
         transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed);
         transform.Rotate(0, Input.GetAxis("Mouse X") * Time.deltaTime * camSpeed, 0);
 
+
         if(Physics.Raycast(transform.position, -transform.up, jumpCastDistance)) {
             if (Input.GetButtonDown("Jump")) {
-                transform.position += new Vector3(0, 1 * Time.deltaTime * jumpHeigth, 0);
+                  //+= jumpSpeed;
             }
         }
 
