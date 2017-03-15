@@ -9,7 +9,10 @@ public class PauseMenu : MonoBehaviour {
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
     public GameObject mainMenuPanel;//if you press main menu
-    bool menuCheck;
+
+    public enum MenuMode {Ingame, Paused, Settings, ToMain};
+    public MenuMode currentMode;
+    //bool menuCheck;
 
 
     void Awake ()
@@ -24,9 +27,51 @@ public class PauseMenu : MonoBehaviour {
     }
     void Update ()
     {
-        if (Input.GetButtonDown("Escape"))
+        switch (currentMode)
         {
-            if (!pauseMenuPanel.activeSelf)
+            case MenuMode.Ingame:
+                if(Input.GetButtonDown("Escape"))
+                {
+                    currentMode = MenuMode.Paused;
+                }
+                Cursor.lockState = CursorLockMode.Locked;
+                ResumeGame();
+                Time.timeScale = 1;
+                break;
+
+            case MenuMode.Paused:
+                if (Input.GetButtonDown("Escape"))
+                {
+                    currentMode = MenuMode.Ingame;
+                }
+                Cursor.lockState = CursorLockMode.Locked;
+                pauseMenuPanel.SetActive(true);
+                hudPanel.SetActive(false);
+                settingsMenuPanel.SetActive(false);
+                Time.timeScale = 0;
+                break;
+
+            case MenuMode.Settings:
+                if (Input.GetButtonDown("Escape"))
+                {
+                    currentMode = MenuMode.Paused;
+                }
+                Cursor.lockState = CursorLockMode.Confined;
+                Settings();
+                break;
+
+            case MenuMode.ToMain:
+                if (Input.GetButtonDown("Escape"))
+                {
+                    currentMode = MenuMode.Ingame;
+                }
+                Cursor.lockState = CursorLockMode.Confined;
+                pauseMenuPanel.SetActive(true);
+                Time.timeScale = 0;
+                MainMenuNo();
+                break;
+            }
+            /*if (!pauseMenuPanel.activeSelf)
             {
                 Cursor.lockState = CursorLockMode.Confined;
                 pauseMenuPanel.SetActive(true);
@@ -47,12 +92,11 @@ public class PauseMenu : MonoBehaviour {
             {
                 mainMenuPanel.SetActive(false);
                 pauseMenuPanel.SetActive(true);
-            }
-        }
+            }*/
     }
     public void ResumeGame ()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         pauseMenuPanel.SetActive(false);
         hudPanel.SetActive(true);
         Time.timeScale = 1;

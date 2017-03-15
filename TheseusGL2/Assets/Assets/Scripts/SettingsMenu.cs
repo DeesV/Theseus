@@ -14,6 +14,7 @@ public class SettingsMenu : MonoBehaviour {
     public GameObject controlSettingsPanel;
     public GameObject gameSettingsPanel;
 
+
     //public CursorLockMode cursorMode;
 
     void Awake ()
