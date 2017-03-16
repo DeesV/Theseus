@@ -15,7 +15,6 @@ public class SettingsMenu : MonoBehaviour {
     public GameObject gameSettingsPanel;
 
 
-    //public CursorLockMode cursorMode;
 
     void Awake ()
     {
@@ -24,13 +23,10 @@ public class SettingsMenu : MonoBehaviour {
         keyBindingsPanel.SetActive(false);
         controlSettingsPanel.SetActive(false);
         gameSettingsPanel.SetActive(false);
-        //Cursor.visible = (CursorLockMode.Locked != cursorMode);
 
     }
     public void SettingsBack ()
     {
-        //Cursor.lockState = wantedMode = CursorLockMode.None
-        //Cursor.lockState = CursorLockMode.Locked;
         settingsMenuPanel.SetActive(false);
         pauseMenuPanel.SetActive(true);
     }
