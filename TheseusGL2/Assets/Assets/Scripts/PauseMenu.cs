@@ -10,8 +10,8 @@ public class PauseMenu : MonoBehaviour {
     public GameObject settingsMenuPanel;
     public GameObject mainMenuPanel;//if you press main menu
 
-    public enum MenuMode {Ingame, Paused, Settings, ToMain};
-    public MenuMode currentMode;
+    /*public enum MenuMode {Ingame, Paused, Settings, ToMain};
+    public MenuMode currentMode;*/
 
 
     void Awake ()

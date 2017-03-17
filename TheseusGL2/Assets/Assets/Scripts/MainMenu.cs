@@ -5,28 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    //Main Menu 
     public GameObject bgImagePanel;
     public GameObject titleScreenPanel;
-    public GameObject pressEnterPanel;
+    //public GameObject pressEnterPanel;
 
     public GameObject settingsPanel;
     public GameObject creditPanel;
 
-    public UIManager _UImanager;
+    //Game Status
+    public UIManager _Uimanager;
     public SettingsMenu _Settings;
     public PauseMenu _PauseMenu;
 
+
     void Awake ()
     {
-        _UImanager = GameObject.Find("GameManager").GetComponent<UIManager>();
+        _Uimanager = GameObject.Find("GameManager").GetComponent<UIManager>();
         _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
+        
+        
+        
         /*if(_UImanager.inMainMenu == false)
         {
 
         }
-        else*/
-        _UImanager.inMainMenu = true;
+        else
+        _UImanager.inMainMenu = true;*/
 
        
     }
@@ -38,7 +44,7 @@ public class MainMenu : MonoBehaviour {
     {
         //_UImanager.inMainMenu = false;
         SceneManager.LoadScene("ArneScene2");
-        _UImanager.inMainMenu = false;
+        _Uimanager.inMainMenu = false;
     }
     public void Settings ()
     {
