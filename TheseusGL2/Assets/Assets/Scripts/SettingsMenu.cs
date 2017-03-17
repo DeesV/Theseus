@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour {
 
+    //Main panels
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
     public GameObject mainMenuPanel;
 
+    //Side options
     public GameObject soundOptionsPanel;
     public GameObject keyBindingsPanel;
     public GameObject controlSettingsPanel;
@@ -18,44 +20,31 @@ public class SettingsMenu : MonoBehaviour {
 
     void Awake ()
     {
-        settingsMenuPanel.SetActive(false);
-        soundOptionsPanel.SetActive(false);
-        keyBindingsPanel.SetActive(false);
-        controlSettingsPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false);
+   
 
+    }
+    public void SettingsOpen ()
+    {
+     
     }
     public void SettingsBack ()
     {
-        settingsMenuPanel.SetActive(false);
-        pauseMenuPanel.SetActive(true);
+ 
     }
     public void Sound ()
     {
-        soundOptionsPanel.SetActive(true);
-        keyBindingsPanel.SetActive(false);
-        controlSettingsPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false);
+    
     }
     public void Keybindings ()
     {
-        soundOptionsPanel.SetActive(false);
-        keyBindingsPanel.SetActive(true);
-        controlSettingsPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false);
+ 
     }
     public void ControlSettings ()
     {
-        soundOptionsPanel.SetActive(false);
-        keyBindingsPanel.SetActive(false);
-        controlSettingsPanel.SetActive(true);
-        gameSettingsPanel.SetActive(false);
+    
     }
     public void GameSettings ()
     {
-        soundOptionsPanel.SetActive(false);
-        keyBindingsPanel.SetActive(false);
-        controlSettingsPanel.SetActive(false);
-        gameSettingsPanel.SetActive(true);
+   
     }
 }
