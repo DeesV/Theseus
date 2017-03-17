@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
-    //Game paused
-    public bool gamePaused;
+    
 
     //Different menus
     public GameObject pauseMenuPanel;
@@ -22,6 +21,14 @@ public class UIManager : MonoBehaviour {
 
     //Cursor
     public CursorLockMode cursorMode;
+
+    //Game Status
+    public bool inMainMenu;
+    public bool inGame;
+    public bool gamePaused;
+
+    //Game Status Enum(Switch)
+
 
 
 

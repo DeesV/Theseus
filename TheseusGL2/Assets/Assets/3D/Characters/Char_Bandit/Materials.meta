@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:TheseusGL2/Assets/Assets/3D/Characters/Char_Bandit/Materials.meta
 guid: 13164b1410a45f84a84e2963877ca4a0
 folderAsset: yes
 timeCreated: 1489744276
+=======
+guid: 9082338478bc7e441a57bfb26f1ba536
+folderAsset: yes
+timeCreated: 1489738102
+>>>>>>> origin/master:TheseusGL2/Assets/Assets/3D/Characters/Char_Bandit/Materials.meta
 licenseType: Free
 DefaultImporter:
   userData: 
