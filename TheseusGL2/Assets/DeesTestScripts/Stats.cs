@@ -23,23 +23,21 @@ public class Stats : MonoBehaviour {
 	}
 
     public void StatPopUp() {
-        if (Input.GetButtonDown("Tab")) {
-            statUp = true;
+        if (Input.GetButton("Tab")) {
             statScreen.SetActive(true);
             mainCam.GetComponent<CameraScript>().enabled = false;
             player.GetComponent<BaseMovement>().enabled = false;
+        }
 
 #if !UNITY_EDITOR
 
             Cursor.lockState = CursorLockMode.Confined;
             return;
 #endif
-
-
-        }
-        /*else if (!statUp) {
+        else {
             statScreen.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-        }*/
+            mainCam.GetComponent<CameraScript>().enabled = true;
+            player.GetComponent<BaseMovement>().enabled = true;
+        }
     }
 }
