@@ -5,55 +5,54 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    //Main Menu 
     public GameObject bgImagePanel;
     public GameObject titleScreenPanel;
-    public GameObject pressEnterPanel;
+    //public GameObject pressEnterPanel;
 
     public GameObject settingsPanel;
     public GameObject creditPanel;
 
-    //Only needed when I make a complete MainMenu with options etc
+    //Game Status
+    public UIManager _Uimanager;
+    public SettingsMenu _Settings;
+    public PauseMenu _PauseMenu;
+
+
     void Awake ()
     {
-        bgImagePanel.SetActive(true);
-        titleScreenPanel.SetActive(true);
-        //pressEnterPanel.SetActive(true);
+        _Uimanager = GameObject.Find("GameManager").GetComponent<UIManager>();
+        _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
+        _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
+        
+        
+        
+        /*if(_UImanager.inMainMenu == false)
+        {
 
-        settingsPanel.SetActive(false);
-        creditPanel.SetActive(false);
+        }
+        else
+        _UImanager.inMainMenu = true;*/
+
+       
     }
 	void Update ()
     {
-        if(Input.GetButtonDown("Escape"))
-        {
-            if (settingsPanel.activeSelf)
-            {
-                settingsPanel.SetActive(false);
-                titleScreenPanel.SetActive(true);
-            }
-            if (creditPanel.activeSelf)
-            {
-                creditPanel.SetActive(false);
-                titleScreenPanel.SetActive(true);
-            }
-        }//to be able to press enter to play
-        /*if (Input.GetButtonDown("Enter"))
-        {
-            SceneManager.LoadScene("ArneScene2");
-        }*/
+        
 	}
     public void StartGame ()
     {
+        //_UImanager.inMainMenu = false;
         SceneManager.LoadScene("ArneScene2");
+        _Uimanager.inMainMenu = false;
     }
     public void Settings ()
     {
-        settingsPanel.SetActive(true);
-        titleScreenPanel.SetActive(false);
+        
     }
     public void Credits ()
     {
-        creditPanel.SetActive(true);
+        
     }
     public void ExitGame ()
     {
