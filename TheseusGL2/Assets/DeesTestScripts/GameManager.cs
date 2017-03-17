@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        //Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+    //static reference to itself
+
+    //references (not static) to other scripts
+
+        //how to call: GameManager.thisManager.otterScript
+
+    // Start past de lockState van de muis aan.
+    void Start () {
+        //Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+       
 	}
+
 }
