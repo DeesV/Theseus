@@ -27,12 +27,12 @@ public class MainMenu : MonoBehaviour {
         
         
         
-        /*if(_UImanager.inMainMenu == false)
+        /*if(_Uimanager.inMainMenu == false)
         {
 
         }
-        else
-        _UImanager.inMainMenu = true;*/
+        else*/
+        //_UImanager.inMainMenu = true;
 
        
     }
@@ -40,6 +40,10 @@ public class MainMenu : MonoBehaviour {
     {
         
 	}
+    public void MainMenuActive ()
+    {
+        //print("hi");
+    }
     public void StartGame ()
     {
         //_UImanager.inMainMenu = false;

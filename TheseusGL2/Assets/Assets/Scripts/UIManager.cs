@@ -24,18 +24,26 @@ public class UIManager : MonoBehaviour {
     //Game Status
     public bool inMainMenu;//false not in main menu, true in main menu.
     public bool gamePaused;//false is game not paused, true is game paused.
+    public bool inSettings;//false when not in settings, true if in settings.
 
     //Game Status Enum(Switch)
     public enum GameStatus {Mainmenu, Ingame, Paused, Settings};
     public GameStatus _GameStatus;
 
     //Settings Status Enum(switch)
-    
+
+
+    //Script Shortcuts
+    public MainMenu _MainMenu;
+    public SettingsMenu _Settings;
+    public PauseMenu _PauseMenu;
 
 
     void Awake ()
     {
-
+        _MainMenu = GameObject.Find("GameManager").GetComponent<MainMenu>();
+        _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
+        _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
     }
     void Start ()
     {
@@ -49,32 +57,36 @@ public class UIManager : MonoBehaviour {
             case GameStatus.Mainmenu:
                 inMainMenu = true;
                 gamePaused = false;
-
-
+                inSettings = false;
+                _MainMenu.MainMenuActive();
+                CursorStatus();
 
                 break;
 
             case GameStatus.Ingame:
                 inMainMenu = false;
                 gamePaused = false;
-
-
+                inSettings = false;
+                _PauseMenu.InGame();
+                CursorStatus();
 
                 break;
 
             case GameStatus.Paused:
                 inMainMenu = false;
                 gamePaused = true;
-
-
+                inSettings = false;
+                Paused();
+                CursorStatus();
 
                 break;
 
             case GameStatus.Settings:
                 inMainMenu = false;
                 gamePaused = true;
-
-
+                inSettings = true;
+                _Settings.SettingsOpen();
+                
 
                 break;
         }

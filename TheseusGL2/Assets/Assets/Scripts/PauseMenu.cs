@@ -22,6 +22,10 @@ public class PauseMenu : MonoBehaviour {
     {
 
     }
+    public void InGame ()
+    {
+
+    }
     public void ResumeGame ()
     {
 
