@@ -46,9 +46,9 @@ public class MainMenu : MonoBehaviour {
     }
     public void StartGame ()
     {
-        //_UImanager.inMainMenu = false;
         SceneManager.LoadScene("ArneScene2");
-        _Uimanager.inMainMenu = false;
+        _Uimanager._GameStatus = UIManager.GameStatus.Ingame;
+        
     }
     public void Settings ()
     {

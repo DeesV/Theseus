@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour {
 
     //Game Status
     public bool inMainMenu;//false not in main menu, true in main menu.
+    public bool inGame;//false when not in game, true when ingame.
     public bool gamePaused;//false is game not paused, true is game paused.
     public bool inSettings;//false when not in settings, true if in settings.
 
@@ -47,9 +48,64 @@ public class UIManager : MonoBehaviour {
     }
     void Start ()
     {
-		
-	}
+        Debug.Log(string.Format("Scene name is {0}", SceneManager.GetActiveScene().name));
+        if(SceneManager.GetActiveScene().name == "ArneScene2")
+        {
+            _GameStatus = GameStatus.Ingame;
+        }
+        else if(SceneManager.GetActiveScene().name == "ArneScene")
+        {
+            _GameStatus = GameStatus.Mainmenu;
+        }
+           
+    }
 	void Update ()
+    {
+        switch (_GameStatus)
+        {
+
+            case GameStatus.Mainmenu:
+                inMainMenu = true;
+                inGame = false;
+                gamePaused = false;
+                inSettings = false;
+                _MainMenu.MainMenuActive();
+                CursorStatus();
+
+                break;
+
+            case GameStatus.Ingame:
+                inMainMenu = false;
+                inGame = true;
+                gamePaused = false;
+                inSettings = false;
+                _PauseMenu.InGame();
+                CursorStatus();
+
+                break;
+
+            case GameStatus.Paused:
+                inMainMenu = false;
+                inGame = false;
+                gamePaused = true;
+                inSettings = false;
+                Paused();
+                CursorStatus();
+
+                break;
+
+            case GameStatus.Settings:
+                inMainMenu = false;
+                inGame = false;
+                gamePaused = true;
+                inSettings = true;
+                _Settings.SettingsOpen();
+
+
+                break;
+        }
+    }
+    /*public void OnGUI ()
     {
         switch (_GameStatus)
         {
@@ -86,11 +142,11 @@ public class UIManager : MonoBehaviour {
                 gamePaused = true;
                 inSettings = true;
                 _Settings.SettingsOpen();
-                
+
 
                 break;
         }
-	}
+    }*/
     public void Paused ()
     {
 
