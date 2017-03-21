@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    //Main Menu 
+    [Header("-Main Menu")] 
     public GameObject bgImagePanel;
     public GameObject titleScreenPanel;
     //public GameObject pressEnterPanel;
@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject settingsPanel;
     public GameObject creditPanel;
 
-    //Game Status
+    [Header("-Game Status")]
     public UIManager _Uimanager;
     public SettingsMenu _Settings;
     public PauseMenu _PauseMenu;
@@ -42,24 +42,7 @@ public class MainMenu : MonoBehaviour {
 	}
     public void MainMenuActive ()
     {
-        //print("hi");
-    }
-    public void StartGame ()
-    {
-        SceneManager.LoadScene("ArneScene2");
-        _Uimanager._GameStatus = UIManager.GameStatus.Ingame;
-        
-    }
-    public void Settings ()
-    {
-        
-    }
-    public void Credits ()
-    {
-        
-    }
-    public void ExitGame ()
-    {
-        Application.Quit();
+        bgImagePanel.SetActive(true);
+
     }
 }

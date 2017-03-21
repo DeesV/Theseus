@@ -6,35 +6,29 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour {
 
    
-    //Different menus
+    [Header("-Different menus")]
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
     public GameObject mainMenuPanel;
 
-    //Settings panels
+    [Header("-Settings panels")]
     public GameObject soundOptionsPanel;
     public GameObject keyBindingsPanel;
     public GameObject controlSettingsPanel;
     public GameObject gameSettingsPanel;
 
-    //Cursor
+    [Header("-CursorState")]
     public CursorLockMode cursorMode;
 
-    //Game Status
-    public bool inMainMenu;//false not in main menu, true in main menu.
-    public bool inGame;//false when not in game, true when ingame.
-    public bool gamePaused;//false is game not paused, true is game paused.
-    public bool inSettings;//false when not in settings, true if in settings.
-
-    //Game Status Enum(Switch)
-    public enum GameStatus {Mainmenu, Ingame, Paused, Settings};
+    //[Header("-Game Status Enum(Switch)")]
+    public enum GameStatus {Mainmenu, Ingame, Credits, Settings};
     public GameStatus _GameStatus;
 
     //Settings Status Enum(switch)
 
 
-    //Script Shortcuts
+    [Header("-Script Shortcuts")]
     public MainMenu _MainMenu;
     public SettingsMenu _Settings;
     public PauseMenu _PauseMenu;
@@ -48,7 +42,7 @@ public class UIManager : MonoBehaviour {
     }
     void Start ()
     {
-        Debug.Log(string.Format("Scene name is {0}", SceneManager.GetActiveScene().name));
+        /*Debug.Log(string.Format("Scene name is {0}", SceneManager.GetActiveScene().name));
         if(SceneManager.GetActiveScene().name == "ArneScene2")
         {
             _GameStatus = GameStatus.Ingame;
@@ -56,104 +50,65 @@ public class UIManager : MonoBehaviour {
         else if(SceneManager.GetActiveScene().name == "ArneScene")
         {
             _GameStatus = GameStatus.Mainmenu;
-        }
+        }*/
            
     }
 	void Update ()
     {
-        switch (_GameStatus)
-        {
-
-            case GameStatus.Mainmenu:
-                inMainMenu = true;
-                inGame = false;
-                gamePaused = false;
-                inSettings = false;
-                _MainMenu.MainMenuActive();
-                CursorStatus();
-
-                break;
-
-            case GameStatus.Ingame:
-                inMainMenu = false;
-                inGame = true;
-                gamePaused = false;
-                inSettings = false;
-                _PauseMenu.InGame();
-                CursorStatus();
-
-                break;
-
-            case GameStatus.Paused:
-                inMainMenu = false;
-                inGame = false;
-                gamePaused = true;
-                inSettings = false;
-                Paused();
-                CursorStatus();
-
-                break;
-
-            case GameStatus.Settings:
-                inMainMenu = false;
-                inGame = false;
-                gamePaused = true;
-                inSettings = true;
-                _Settings.SettingsOpen();
-
-
-                break;
-        }
+        
     }
-    /*public void OnGUI ()
+    public void CheckGameStatus ()
     {
         switch (_GameStatus)
         {
 
             case GameStatus.Mainmenu:
-                inMainMenu = true;
-                gamePaused = false;
-                inSettings = false;
-                _MainMenu.MainMenuActive();
+                
+                //_MainMenu.
                 CursorStatus();
 
                 break;
 
             case GameStatus.Ingame:
-                inMainMenu = false;
-                gamePaused = false;
-                inSettings = false;
-                _PauseMenu.InGame();
+                
+                
                 CursorStatus();
 
                 break;
 
-            case GameStatus.Paused:
-                inMainMenu = false;
-                gamePaused = true;
-                inSettings = false;
-                Paused();
+            case GameStatus.Credits:
+                
                 CursorStatus();
 
                 break;
 
             case GameStatus.Settings:
-                inMainMenu = false;
-                gamePaused = true;
-                inSettings = true;
-                _Settings.SettingsOpen();
+
+                CursorStatus();
 
 
                 break;
         }
-    }*/
-    public void Paused ()
-    {
-
     }
-    public void Unpause ()
+    public void StartGame ()
     {
-
+        _GameStatus = GameStatus.Ingame;
+        CheckGameStatus();
+    }
+    public void Settings ()
+    {
+        _GameStatus = GameStatus.Settings;
+        CheckGameStatus();
+    }
+    public void Credits ()
+    {
+        _GameStatus = GameStatus.Credits;
+        CheckGameStatus();
+    }
+    public void ToMainMenu ()
+    {
+        _GameStatus = GameStatus.Mainmenu;
+        CheckGameStatus();
     }
     public void CursorStatus ()
     {

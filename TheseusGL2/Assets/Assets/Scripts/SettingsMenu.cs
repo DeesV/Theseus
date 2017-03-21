@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour {
 
-    //Main panels
+    [Header("-Main panels")]
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
     public GameObject mainMenuPanel;
 
-    //Side options
+    [Header("-Side options")]
     public GameObject soundOptionsPanel;
     public GameObject keyBindingsPanel;
     public GameObject controlSettingsPanel;
