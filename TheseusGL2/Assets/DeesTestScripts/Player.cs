@@ -22,5 +22,5 @@ public class Player : MonoBehaviour {
 		
 	}
 
-    void LevelManager() { }
+    void PlayerLevelManager() { }
 }
