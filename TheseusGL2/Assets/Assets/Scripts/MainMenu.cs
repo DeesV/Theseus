@@ -51,4 +51,17 @@ public class MainMenu : MonoBehaviour {
         bgImagePanel.SetActive(false);
         titleScreenPanel.SetActive(false);
     }
+    public void ActivateCredits ()
+    {
+        
+    }
+    public void DeActivateCredits()
+    {
+
+    }
+    public void ExitGame ()
+    {
+        //Application.Quit();
+        print("game quit");
+    }
 }

@@ -29,7 +29,7 @@ public class SettingsMenu : MonoBehaviour {
     }
     public void DeActivateSettings ()
     {
-
+        settingsMenuPanel.SetActive(false);
     }    
     public void Sound ()
     {

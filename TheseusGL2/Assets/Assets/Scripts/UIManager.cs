@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour {
 
     [Header("-Script Shortcuts")]
     public MainMenu _MainMenu;
-    public SettingsMenu _Settings;
+    public SettingsMenu _SettingsMenu;
     public PauseMenu _PauseMenu;
 
     [Header("GameManager Object")]
@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour {
         DontDestroyOnLoad(canvas);
 
         _MainMenu = GameObject.Find("GameManager").GetComponent<MainMenu>();
-        _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
+        _SettingsMenu = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
     }
     void Start ()
@@ -79,13 +79,18 @@ public class UIManager : MonoBehaviour {
                 break;
 
             case GameStatus.Credits:
+
                 
+                _MainMenu.ActivateCredits();
+
                 //CursorStatus();
 
                 break;
 
             case GameStatus.Settings:
 
+
+                _SettingsMenu.ActivateSettings();
                 //CursorStatus();
 
 
@@ -114,7 +119,7 @@ public class UIManager : MonoBehaviour {
     }
     public void ExitGame ()
     {
-
+        _MainMenu.ExitGame();
     }
     public void CursorStatus ()
     {
