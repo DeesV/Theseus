@@ -24,9 +24,10 @@ public class MainMenu : MonoBehaviour {
         _Uimanager = GameObject.Find("GameManager").GetComponent<UIManager>();
         _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
-        
-        
-        
+        //bgImagePanel.SetActive(false);
+        //titleScreenPanel.SetActive(false);
+
+
         /*if(_Uimanager.inMainMenu == false)
         {
 
@@ -34,15 +35,20 @@ public class MainMenu : MonoBehaviour {
         else*/
         //_UImanager.inMainMenu = true;
 
-       
+
     }
 	void Update ()
     {
         
 	}
-    public void MainMenuActive ()
+    public void ActivateMainMenu ()
     {
         bgImagePanel.SetActive(true);
-
+        titleScreenPanel.SetActive(true);
+    }
+    public void DeActivateMainMenu ()
+    {
+        bgImagePanel.SetActive(false);
+        titleScreenPanel.SetActive(false);
     }
 }

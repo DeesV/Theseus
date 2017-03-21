@@ -20,8 +20,8 @@ public class UIManager : MonoBehaviour {
 
     [Header("-CursorState")]
     public CursorLockMode cursorMode;
-
-    //[Header("-Game Status Enum(Switch)")]
+    
+    //Game Status Enum(Switch)
     public enum GameStatus {Mainmenu, Ingame, Credits, Settings};
     public GameStatus _GameStatus;
 
@@ -33,24 +33,24 @@ public class UIManager : MonoBehaviour {
     public SettingsMenu _Settings;
     public PauseMenu _PauseMenu;
 
+    [Header("GameManager Object")]
+    public GameObject gameManager;
+    public GameObject canvas;
 
     void Awake ()
     {
+        gameManager = GameObject.Find("GameManager");
+        DontDestroyOnLoad(gameManager);
+        canvas = GameObject.Find("Canvas");
+        DontDestroyOnLoad(canvas);
+
         _MainMenu = GameObject.Find("GameManager").GetComponent<MainMenu>();
         _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
     }
     void Start ()
     {
-        /*Debug.Log(string.Format("Scene name is {0}", SceneManager.GetActiveScene().name));
-        if(SceneManager.GetActiveScene().name == "ArneScene2")
-        {
-            _GameStatus = GameStatus.Ingame;
-        }
-        else if(SceneManager.GetActiveScene().name == "ArneScene")
-        {
-            _GameStatus = GameStatus.Mainmenu;
-        }*/
+        //Debug.Log(string.Format("Scene name is {0}", SceneManager.GetActiveScene().name));
            
     }
 	void Update ()
@@ -63,28 +63,30 @@ public class UIManager : MonoBehaviour {
         {
 
             case GameStatus.Mainmenu:
-                
-                //_MainMenu.
-                CursorStatus();
+
+                _MainMenu.ActivateMainMenu();
+                //CursorStatus(); in main menu script een cursorstatus function en daar aanpassen?
 
                 break;
 
             case GameStatus.Ingame:
+
+                _MainMenu.DeActivateMainMenu();
+                _PauseMenu.ActivateInGame();
                 
-                
-                CursorStatus();
+                //CursorStatus();
 
                 break;
 
             case GameStatus.Credits:
                 
-                CursorStatus();
+                //CursorStatus();
 
                 break;
 
             case GameStatus.Settings:
 
-                CursorStatus();
+                //CursorStatus();
 
 
                 break;
@@ -109,6 +111,10 @@ public class UIManager : MonoBehaviour {
     {
         _GameStatus = GameStatus.Mainmenu;
         CheckGameStatus();
+    }
+    public void ExitGame ()
+    {
+
     }
     public void CursorStatus ()
     {

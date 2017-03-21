@@ -23,14 +23,14 @@ public class SettingsMenu : MonoBehaviour {
    
 
     }
-    public void SettingsOpen ()
+    public void ActivateSettings ()
     {
-     
+        settingsMenuPanel.SetActive(true);
     }
-    public void SettingsBack ()
+    public void DeActivateSettings ()
     {
- 
-    }
+
+    }    
     public void Sound ()
     {
     

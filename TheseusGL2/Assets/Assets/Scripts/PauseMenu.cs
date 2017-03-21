@@ -22,7 +22,12 @@ public class PauseMenu : MonoBehaviour {
     {
 
     }
-    public void InGame ()
+    public void ActivateInGame ()
+    {
+        SceneManager.LoadScene("ArneScene2");
+        hudPanel.SetActive(true);
+    }
+    public void DeActivateInGame ()
     {
 
     }
