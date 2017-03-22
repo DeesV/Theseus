@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject titleScreenPanel;
     //public GameObject pressEnterPanel;
 
-    public GameObject settingsPanel;
+    public GameObject settingsMenuPanel;
     public GameObject creditPanel;
 
     [Header("-Game Status")]
@@ -51,13 +51,21 @@ public class MainMenu : MonoBehaviour {
         bgImagePanel.SetActive(false);
         titleScreenPanel.SetActive(false);
     }
+    public void ActivateSettings()
+    {
+        settingsMenuPanel.SetActive(true);
+    }
+    public void DeActivateSettings ()
+    {
+        settingsMenuPanel.SetActive(false);
+    }
     public void ActivateCredits ()
     {
-        
+        creditPanel.SetActive(true);
     }
     public void DeActivateCredits()
     {
-
+        creditPanel.SetActive(false);
     }
     public void ExitGame ()
     {

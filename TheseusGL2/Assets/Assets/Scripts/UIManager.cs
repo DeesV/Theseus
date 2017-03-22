@@ -20,9 +20,10 @@ public class UIManager : MonoBehaviour {
 
     [Header("-CursorState")]
     public CursorLockMode cursorMode;
+
     
     //Game Status Enum(Switch)
-    public enum GameStatus {Mainmenu, Ingame, Credits, Settings};
+    public enum GameStatus {Mainmenu, Ingame, Credits, MainMenuSettings, IngameSettings};
     public GameStatus _GameStatus;
 
     //Settings Status Enum(switch)
@@ -55,7 +56,7 @@ public class UIManager : MonoBehaviour {
     }
 	void Update ()
     {
-        
+        PressEscape();
     }
     public void CheckGameStatus ()
     {
@@ -64,35 +65,59 @@ public class UIManager : MonoBehaviour {
 
             case GameStatus.Mainmenu:
 
+                
                 _MainMenu.ActivateMainMenu();
+                _MainMenu.DeActivateSettings();
+                _PauseMenu.DeActivateInGame();
+                _SettingsMenu.DeActivateSettings();
                 //CursorStatus(); in main menu script een cursorstatus function en daar aanpassen?
 
                 break;
 
             case GameStatus.Ingame:
 
+                _MainMenu.DeActivateCredits();
                 _MainMenu.DeActivateMainMenu();
+                _SettingsMenu.DeActivateSettings();
                 _PauseMenu.ActivateInGame();
-                
+
                 //CursorStatus();
 
                 break;
 
             case GameStatus.Credits:
 
-                
                 _MainMenu.ActivateCredits();
+                _MainMenu.DeActivateCredits();
+                _SettingsMenu.DeActivateSettings();
+                _PauseMenu.DeActivateInGame();
+                
 
                 //CursorStatus();
 
                 break;
 
-            case GameStatus.Settings:
+            case GameStatus.MainMenuSettings:
 
-
-                _SettingsMenu.ActivateSettings();
+                _MainMenu.ActivateSettings();
+                _MainMenu.DeActivateCredits();
+                _MainMenu.DeActivateCredits();
+                _PauseMenu.DeActivateInGame();
                 //CursorStatus();
 
+
+                break;
+
+            case GameStatus.IngameSettings:
+
+                //_
+                _MainMenu.DeActivateCredits();
+                _MainMenu.DeActivateMainMenu();
+                _PauseMenu.DeActivateInGame();
+                _SettingsMenu.ActivateSettings();
+
+
+                //_PauseMenu.ActivateInGame();
 
                 break;
         }
@@ -102,9 +127,14 @@ public class UIManager : MonoBehaviour {
         _GameStatus = GameStatus.Ingame;
         CheckGameStatus();
     }
-    public void Settings ()
+    public void MainMenuSettings ()
     {
-        _GameStatus = GameStatus.Settings;
+        _GameStatus = GameStatus.MainMenuSettings;
+        CheckGameStatus();
+    }
+    public void IngameSettings ()
+    {
+        _GameStatus = GameStatus.IngameSettings;
         CheckGameStatus();
     }
     public void Credits ()
@@ -116,17 +146,21 @@ public class UIManager : MonoBehaviour {
     {
         _GameStatus = GameStatus.Mainmenu;
         CheckGameStatus();
+
     }
     public void ExitGame ()
     {
         _MainMenu.ExitGame();
     }
-    public void CursorStatus ()
+    public void CursorStatus (int cursormode)
     {
 
     }
     public void PressEscape ()
     {
-
+        if(Input.GetButtonDown("Escape"))
+        {
+            pauseMenuPanel.SetActive(true);
+        }
     }  
 }

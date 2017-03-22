@@ -26,10 +26,13 @@ public class PauseMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("ArneScene2");
         hudPanel.SetActive(true);
+        pauseMenuPanel.SetActive(false);
     }
     public void DeActivateInGame ()
     {
-
+        //SceneManager.LoadScene("ArneScene");
+        pauseMenuPanel.SetActive(true);
+        hudPanel.SetActive(false);
     }
     public void ResumeGame ()
     {
