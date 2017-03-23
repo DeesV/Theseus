@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 5eedbb993b49bbb42ad78e7a55ea52cc
+timeCreated: 1490259066
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera001
+    100004: Camera001.Target
+    100006: Default
+    100008: Default001
+    100010: Genesis2Male.Shape
+    100012: lCarpal1
+    100014: lCarpal2
+    100016: lCollar
+    100018: lForeArm
+    100020: lHand
+    100022: lIndex1
+    100024: lIndex2
+    100026: lIndex3
+    100028: lMid1
+    100030: lMid2
+    100032: lMid3
+    100034: lPinky1
+    100036: lPinky2
+    100038: lPinky3
+    100040: lRing1
+    100042: lRing2
+    100044: lRing3
+    100046: lShldr
+    100048: lThumb1
+    100050: lThumb2
+    100052: lThumb3
+    100054: rCarpal1
+    100056: rCarpal2
+    100058: rCollar
+    100060: rForeArm
+    100062: rHand
+    100064: rIndex1
+    100066: rIndex2
+    100068: rIndex3
+    100070: rMid1
+    100072: rMid2
+    100074: rMid3
+    100076: rPinky1
+    100078: rPinky2
+    100080: rPinky3
+    100082: rRing1
+    100084: rRing2
+    100086: rRing3
+    100088: rShldr
+    100090: rThumb1
+    100092: rThumb2
+    100094: rThumb3
+    400000: //RootNode
+    400002: Camera001
+    400004: Camera001.Target
+    400006: Default
+    400008: Default001
+    400010: Genesis2Male.Shape
+    400012: lCarpal1
+    400014: lCarpal2
+    400016: lCollar
+    400018: lForeArm
+    400020: lHand
+    400022: lIndex1
+    400024: lIndex2
+    400026: lIndex3
+    400028: lMid1
+    400030: lMid2
+    400032: lMid3
+    400034: lPinky1
+    400036: lPinky2
+    400038: lPinky3
+    400040: lRing1
+    400042: lRing2
+    400044: lRing3
+    400046: lShldr
+    400048: lThumb1
+    400050: lThumb2
+    400052: lThumb3
+    400054: rCarpal1
+    400056: rCarpal2
+    400058: rCollar
+    400060: rForeArm
+    400062: rHand
+    400064: rIndex1
+    400066: rIndex2
+    400068: rIndex3
+    400070: rMid1
+    400072: rMid2
+    400074: rMid3
+    400076: rPinky1
+    400078: rPinky2
+    400080: rPinky3
+    400082: rRing1
+    400084: rRing2
+    400086: rRing3
+    400088: rShldr
+    400090: rThumb1
+    400092: rThumb2
+    400094: rThumb3
+    2300000: Default
+    2300002: Default001
+    2300004: Genesis2Male.Shape
+    3300000: Default
+    3300002: Default001
+    3300004: Genesis2Male.Shape
+    4300000: Genesis2Male.Shape
+    4300002: Default001
+    4300004: Default
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
