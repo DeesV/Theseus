@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 
     // Start past de lockState van de muis aan.
     void Start () {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame

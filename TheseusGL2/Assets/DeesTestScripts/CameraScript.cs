@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 //DIT SCRIPT STAAT OP DE CAMERA, DE CAMERA STAAT GECHILD AAN EEN EMPTYGAMEOBJECT DIE GECHILD IS AAN DE PLAYER.
 public class CameraScript : MonoBehaviour {
-    //IK HOU VAN JE ARNE <3 JAN
     GameObject player;
     BaseMovement playerScript;
     public static CameraScript thisCamera;
