@@ -22,36 +22,18 @@ public class PauseMenu : MonoBehaviour {
     {
 
     }
+    //to ingame
     public void ActivateInGame ()
     {
         SceneManager.LoadScene("ArneScene2");
         hudPanel.SetActive(true);
         pauseMenuPanel.SetActive(false);
     }
+    //out of the game
     public void DeActivateInGame ()
     {
-        //SceneManager.LoadScene("ArneScene");
-        pauseMenuPanel.SetActive(true);
         hudPanel.SetActive(false);
-    }
-    public void ResumeGame ()
-    {
-
-    }
-    public void Settings ()
-    {
-     
-    }
-    public void MainMenu ()
-    {
-
-    }   
-    public void MainMenuYes ()
-    {
-
-    }
-    public void MainMenuNo ()
-    {
-  
+        pauseMenuPanel.SetActive(false);
+        //SceneManager.LoadScene("ArneScene");  //CAUSES A ERROR WHEN ACTIVATED; MULTIPLE EVENTSYSTEMS IN SCENE, THIS IS NOT SUPPORTED.
     }
 }

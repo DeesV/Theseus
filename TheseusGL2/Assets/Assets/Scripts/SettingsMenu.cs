@@ -16,7 +16,7 @@ public class SettingsMenu : MonoBehaviour {
     public GameObject controlSettingsPanel;
     public GameObject gameSettingsPanel;
 
-
+    public bool inMainMenu;
 
     void Awake ()
     {
@@ -26,10 +26,19 @@ public class SettingsMenu : MonoBehaviour {
     public void ActivateSettings ()
     {
         settingsMenuPanel.SetActive(true);
+        hudPanel.SetActive(false);
     }
     public void DeActivateSettings ()
     {
-        settingsMenuPanel.SetActive(false);
+        if(inMainMenu == false)
+        {
+            settingsMenuPanel.SetActive(false);
+            hudPanel.SetActive(true);
+        }
+        else
+        {
+            return;
+        }
     }    
     public void Sound ()
     {

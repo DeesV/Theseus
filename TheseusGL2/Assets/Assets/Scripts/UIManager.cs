@@ -38,6 +38,8 @@ public class UIManager : MonoBehaviour {
     public GameObject gameManager;
     public GameObject canvas;
 
+    public bool inMainMenu;
+
     void Awake ()
     {
         gameManager = GameObject.Find("GameManager");
@@ -65,9 +67,10 @@ public class UIManager : MonoBehaviour {
 
             case GameStatus.Mainmenu:
 
-                
+                inMainMenu = true;
                 _MainMenu.ActivateMainMenu();
                 _MainMenu.DeActivateSettings();
+                _MainMenu.DeActivateCredits();
                 _PauseMenu.DeActivateInGame();
                 _SettingsMenu.DeActivateSettings();
                 //CursorStatus(); in main menu script een cursorstatus function en daar aanpassen?
@@ -76,6 +79,7 @@ public class UIManager : MonoBehaviour {
 
             case GameStatus.Ingame:
 
+                //inMainMenu = false;
                 _MainMenu.DeActivateCredits();
                 _MainMenu.DeActivateMainMenu();
                 _SettingsMenu.DeActivateSettings();
@@ -87,6 +91,7 @@ public class UIManager : MonoBehaviour {
 
             case GameStatus.Credits:
 
+                //inMainMenu = true;
                 _MainMenu.ActivateCredits();
                 _MainMenu.DeActivateCredits();
                 _SettingsMenu.DeActivateSettings();
@@ -99,25 +104,22 @@ public class UIManager : MonoBehaviour {
 
             case GameStatus.MainMenuSettings:
 
+                //inMainMenu = true;
                 _MainMenu.ActivateSettings();
                 _MainMenu.DeActivateCredits();
                 _MainMenu.DeActivateCredits();
                 _PauseMenu.DeActivateInGame();
-                //CursorStatus();
 
 
                 break;
 
             case GameStatus.IngameSettings:
 
-                //_
+                //inMainMenu = false;
                 _MainMenu.DeActivateCredits();
                 _MainMenu.DeActivateMainMenu();
-                _PauseMenu.DeActivateInGame();
                 _SettingsMenu.ActivateSettings();
 
-
-                //_PauseMenu.ActivateInGame();
 
                 break;
         }

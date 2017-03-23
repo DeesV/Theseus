@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour {
     public SettingsMenu _Settings;
     public PauseMenu _PauseMenu;
 
+    public bool inMainMenu;
 
     void Awake ()
     {
@@ -57,7 +58,16 @@ public class MainMenu : MonoBehaviour {
     }
     public void DeActivateSettings ()
     {
-        settingsMenuPanel.SetActive(false);
+        if (inMainMenu == true)
+        {
+            settingsMenuPanel.SetActive(false);
+            bgImagePanel.SetActive(true);
+            titleScreenPanel.SetActive(true);
+        }
+        else
+        {
+            return;
+        }
     }
     public void ActivateCredits ()
     {
