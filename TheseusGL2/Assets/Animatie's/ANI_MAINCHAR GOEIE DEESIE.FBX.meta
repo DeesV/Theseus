@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8a888c717cb913a4b9bad46a35e03ec9
-timeCreated: 1490258076
+guid: 41ef642d0b38dc04fb75065db440800f
+timeCreated: 1490260447
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -106,17 +106,16 @@ ModelImporter:
     2300000: Cylinder001
     2300002: Default
     2300004: Default001
-    2300006: Genesis2Male.Shape
     3300000: Cylinder001
     3300002: Default
     3300004: Default001
-    3300006: Genesis2Male.Shape
     4300000: Genesis2Male.Shape
     4300002: Default001
     4300004: Cylinder001
     4300006: Default
     7400000: Take 001
     9500000: //RootNode
+    13700000: Genesis2Male.Shape
   materials:
     importMaterials: 1
     materialName: 0
