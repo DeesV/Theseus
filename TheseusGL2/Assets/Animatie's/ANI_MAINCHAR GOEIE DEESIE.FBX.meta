@@ -113,7 +113,19 @@ ModelImporter:
     4300002: Default001
     4300004: Cylinder001
     4300006: Default
-    7400000: Take 001
+    7400000: Attack1
+    7400002: Idle
+    7400004: Attack2
+    7400006: Damage1
+    7400008: Damage2
+    7400010: Death
+    7400012: Fall
+    7400014: Jump
+    7400016: Smash
+    7400018: Start Run
+    7400020: Run Loop
+    7400022: End Run
+    7400024: Walk
     9500000: //RootNode
     13700000: Genesis2Male.Shape
   materials:
@@ -136,7 +148,1645 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 134
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Take 001
+      firstFrame: 135
+      lastFrame: 227
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Damage1
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Damage2
+      takeName: Take 001
+      firstFrame: 280
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 320
+      lastFrame: 450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fall
+      takeName: Take 001
+      firstFrame: 460
+      lastFrame: 490
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 490
+      lastFrame: 545
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Smash
+      takeName: Take 001
+      firstFrame: 550
+      lastFrame: 616
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Start Run
+      takeName: Take 001
+      firstFrame: 620
+      lastFrame: 633
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run Loop
+      takeName: Take 001
+      firstFrame: 633
+      lastFrame: 649
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: End Run
+      takeName: Take 001
+      firstFrame: 649
+      lastFrame: 662
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 675
+      lastFrame: 702
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera001
+        weight: 1
+      - path: Camera001.Target
+        weight: 1
+      - path: Genesis2Male.Shape
+        weight: 1
+      - path: lCollar
+        weight: 1
+      - path: lCollar/lShldr
+        weight: 1
+      - path: lCollar/lShldr/lForeArm
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/Default001
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lIndex1/lIndex2/lIndex3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal1/lMid1/lMid2/lMid3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lPinky1/lPinky2/lPinky3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lCarpal2/lRing1/lRing2/lRing3
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2
+        weight: 1
+      - path: lCollar/lShldr/lForeArm/lHand/lThumb1/lThumb2/lThumb3
+        weight: 1
+      - path: rCollar
+        weight: 1
+      - path: rCollar/rShldr
+        weight: 1
+      - path: rCollar/rShldr/rForeArm
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/Default
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rIndex1/rIndex2/rIndex3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/Cylinder001
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal1/rMid1/rMid2/rMid3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rPinky1/rPinky2/rPinky3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rCarpal2/rRing1/rRing2/rRing3
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2
+        weight: 1
+      - path: rCollar/rShldr/rForeArm/rHand/rThumb1/rThumb2/rThumb3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

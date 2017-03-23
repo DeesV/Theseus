@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     public int playerLevel;
     public float playerXP;
     public int playerXPNeeded;
+    public int clickXP;
    
     GameObject statScreen;
 
@@ -37,10 +38,13 @@ public class Player : MonoBehaviour {
         statScreen.transform.GetChild(4).GetComponent<Text>().text = playerXP.ToString();
         statScreen.transform.GetChild(5).GetComponent<Text>().text = playerXPNeeded.ToString();
         statScreen.transform.GetChild(3).GetComponent<Text>().text = playerLevel.ToString();
+        if (Input.GetButtonDown("Fire1"))
+            playerXP += clickXP;
         if (playerXP >= playerXPNeeded) {
             playerXPNeeded = Mathf.RoundToInt(playerXPNeeded * 1.15f);
             playerLevel += 1;
             playerXP = 0;
+            clickXP += 5;
         }
 
     }
