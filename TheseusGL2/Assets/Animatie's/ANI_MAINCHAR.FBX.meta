@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 8a888c717cb913a4b9bad46a35e03ec9
+timeCreated: 1490258076
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera001
+    100004: Camera001.Target
+    100006: Cylinder001
+    100008: Default
+    100010: Default001
+    100012: Genesis2Male.Shape
+    100014: lCarpal1
+    100016: lCarpal2
+    100018: lCollar
+    100020: lForeArm
+    100022: lHand
+    100024: lIndex1
+    100026: lIndex2
+    100028: lIndex3
+    100030: lMid1
+    100032: lMid2
+    100034: lMid3
+    100036: lPinky1
+    100038: lPinky2
+    100040: lPinky3
+    100042: lRing1
+    100044: lRing2
+    100046: lRing3
+    100048: lShldr
+    100050: lThumb1
+    100052: lThumb2
+    100054: lThumb3
+    100056: rCarpal1
+    100058: rCarpal2
+    100060: rCollar
+    100062: rForeArm
+    100064: rHand
+    100066: rIndex1
+    100068: rIndex2
+    100070: rIndex3
+    100072: rMid1
+    100074: rMid2
+    100076: rMid3
+    100078: rPinky1
+    100080: rPinky2
+    100082: rPinky3
+    100084: rRing1
+    100086: rRing2
+    100088: rRing3
+    100090: rShldr
+    100092: rThumb1
+    100094: rThumb2
+    100096: rThumb3
+    400000: //RootNode
+    400002: Camera001
+    400004: Camera001.Target
+    400006: Cylinder001
+    400008: Default
+    400010: Default001
+    400012: Genesis2Male.Shape
+    400014: lCarpal1
+    400016: lCarpal2
+    400018: lCollar
+    400020: lForeArm
+    400022: lHand
+    400024: lIndex1
+    400026: lIndex2
+    400028: lIndex3
+    400030: lMid1
+    400032: lMid2
+    400034: lMid3
+    400036: lPinky1
+    400038: lPinky2
+    400040: lPinky3
+    400042: lRing1
+    400044: lRing2
+    400046: lRing3
+    400048: lShldr
+    400050: lThumb1
+    400052: lThumb2
+    400054: lThumb3
+    400056: rCarpal1
+    400058: rCarpal2
+    400060: rCollar
+    400062: rForeArm
+    400064: rHand
+    400066: rIndex1
+    400068: rIndex2
+    400070: rIndex3
+    400072: rMid1
+    400074: rMid2
+    400076: rMid3
+    400078: rPinky1
+    400080: rPinky2
+    400082: rPinky3
+    400084: rRing1
+    400086: rRing2
+    400088: rRing3
+    400090: rShldr
+    400092: rThumb1
+    400094: rThumb2
+    400096: rThumb3
+    2300000: Cylinder001
+    2300002: Default
+    2300004: Default001
+    2300006: Genesis2Male.Shape
+    3300000: Cylinder001
+    3300002: Default
+    3300004: Default001
+    3300006: Genesis2Male.Shape
+    4300000: Genesis2Male.Shape
+    4300002: Default001
+    4300004: Cylinder001
+    4300006: Default
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

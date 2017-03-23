@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
     public int playerCurrentHP;
     public int playerMaxHP;
     public int playerLevel;
-    public int playerXP;
+    public float playerXP;
     public int playerXPNeeded;
    
     GameObject statScreen;
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour {
         statScreen.transform.GetChild(5).GetComponent<Text>().text = playerXPNeeded.ToString();
         statScreen.transform.GetChild(3).GetComponent<Text>().text = playerLevel.ToString();
         if (playerXP >= playerXPNeeded) {
-            playerXPNeeded += 50;
+            playerXPNeeded = Mathf.RoundToInt(playerXPNeeded * 1.15f);
             playerLevel += 1;
             playerXP = 0;
         }
