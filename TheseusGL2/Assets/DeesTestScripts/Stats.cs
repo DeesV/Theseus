@@ -8,12 +8,15 @@ public class Stats : MonoBehaviour {
     GameObject statScreen;
     CameraScript mainCam;
     GameObject player;
+    GameObject levelUpCS;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         statScreen = GameObject.FindWithTag("StatScreen");
         mainCam = CameraScript.thisCamera;
         player = GameObject.FindWithTag("Player");
+        levelUpCS = GameObject.FindGameObjectWithTag("LevelUpText");
+        levelUpCS.SetActive(false);
         statScreen.SetActive(false);
 	}
 	

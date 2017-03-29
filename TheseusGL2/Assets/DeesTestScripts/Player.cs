@@ -16,10 +16,12 @@ public class Player : MonoBehaviour {
     public int clickXP;
    
     GameObject statScreen;
+    GameObject levelUp;
 
 	// Use this for initialization
 	void Awake () {
         statScreen = GameObject.FindGameObjectWithTag("StatScreen");
+        levelUp = GameObject.FindGameObjectWithTag("LevelUpText");
         playerMaxHP = 100;
         playerCurrentHP = playerMaxHP;
         playerLevel = 1;
@@ -41,6 +43,8 @@ public class Player : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
             playerXP += clickXP;
         if (playerXP >= playerXPNeeded) {
+            StartCoroutine(NewLevelShow());
+            levelUp.transform.GetComponent<Text>().text = ("Level Up! Current level:" + (playerLevel + 1));
             playerXPNeeded = Mathf.RoundToInt(playerXPNeeded * 1.15f);
             playerLevel += 1;
             playerXP = 0;
@@ -48,6 +52,13 @@ public class Player : MonoBehaviour {
         }
 
     }
+
+    IEnumerator NewLevelShow(){
+        levelUp.SetActive(true);
+        yield return new WaitForSeconds(3);
+        levelUp.SetActive(false);
+    }
+
     void PlayerHPManager() {
         statScreen.transform.GetChild(1).GetComponent<Text>().text = playerCurrentHP.ToString();
         statScreen.transform.GetChild(2).GetComponent<Text>().text = playerMaxHP.ToString();
