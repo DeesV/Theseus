@@ -14,36 +14,41 @@ public class MainMenu : MonoBehaviour {
     public GameObject creditPanel;
 
     [Header("-Game Status")]
-    public UIManager _Uimanager;
+    public UIManager _UIManager;
     public SettingsMenu _Settings;
     public PauseMenu _PauseMenu;
 
-    public bool inMainMenu;
+    public bool inCredits;
 
     void Awake ()
     {
-        _Uimanager = GameObject.Find("GameManager").GetComponent<UIManager>();
-        _Settings = GameObject.Find("GameManager").GetComponent<SettingsMenu>();
-        _PauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
-        //bgImagePanel.SetActive(false);
-        //titleScreenPanel.SetActive(false);
-
-
-        /*if(_Uimanager.inMainMenu == false)
-        {
-
-        }
-        else*/
-        //_UImanager.inMainMenu = true;
-
-
+        _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+        _Settings = GameObject.Find("Canvas").GetComponent<SettingsMenu>();
+        _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
     }
 	void Update ()
     {
-        
+       
 	}
     public void ActivateMainMenu ()
     {
+        if(SceneManager.GetActiveScene().name == "MainMenuTest")
+        {
+            return;
+        }
+        else
+        {
+            SceneManager.LoadScene("InGameTest");
+            Time.timeScale = 1;
+        }
+        /*if (SceneManager.GetActiveScene().name == "InGameTest") //You get the multiple eventsystem stuff again
+        {
+            SceneManager.LoadScene("MainMenuTest");
+        }
+        else
+        {
+            return;
+        }*/
         bgImagePanel.SetActive(true);
         titleScreenPanel.SetActive(true);
     }
@@ -58,7 +63,7 @@ public class MainMenu : MonoBehaviour {
     }
     public void DeActivateSettings ()
     {
-        if (inMainMenu == true)
+        if (_UIManager.inMainMenu == true)
         {
             settingsMenuPanel.SetActive(false);
             bgImagePanel.SetActive(true);
@@ -79,7 +84,10 @@ public class MainMenu : MonoBehaviour {
     }
     public void ExitGame ()
     {
-        //Application.Quit();
-        print("game quit");
+        Application.Quit();
+    }
+    public void DeActivateTitleScreen ()
+    {
+        titleScreenPanel.SetActive(false);
     }
 }
