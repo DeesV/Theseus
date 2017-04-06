@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: ee8fe6b3e3faaf2418be6a44a2382f35
-timeCreated: 1491306510
-=======
 guid: 460e4f6222fbea2439c1e32f849191ed
-timeCreated: 1491302867
->>>>>>> 3cd937ac39b75c815c2e2620ad04ed17481dc608
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -90,6 +83,7 @@ ModelImporter:
     4300026: spaken003
     4300028: weels003
     4300030: steunbalk
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -114,7 +108,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -152,7 +146,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
