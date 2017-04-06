@@ -20,12 +20,12 @@ public class MainMenu : MonoBehaviour {
 
     public bool inCredits;
 
-    void Awake ()
+   /* void Awake ()
     {
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
         _Settings = GameObject.Find("Canvas").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-    }
+    }*/
 	void Update ()
     {
        

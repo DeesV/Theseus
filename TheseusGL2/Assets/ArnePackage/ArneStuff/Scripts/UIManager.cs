@@ -56,12 +56,6 @@ public class UIManager : MonoBehaviour {
         _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
 
-        _GameStatus = GameStatus.Mainmenu;
-        CheckGameStatus();
-
-        _SettingsStatus = SettingsStatus.None;
-        CheckSettingPanelStatus();
-
         isCursorLocked = false;
         CursorMode();
     }

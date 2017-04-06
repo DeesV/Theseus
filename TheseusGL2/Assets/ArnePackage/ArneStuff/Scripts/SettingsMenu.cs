@@ -22,10 +22,10 @@ public class SettingsMenu : MonoBehaviour
     public bool inCredits;
 
 
-    void Awake()
+    /*void Awake()
     {
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
-    }
+    }*/
     public void Update()
     {
 
@@ -41,10 +41,6 @@ public class SettingsMenu : MonoBehaviour
         {
             settingsMenuPanel.SetActive(false);
             hudPanel.SetActive(true);
-        }
-        else
-        {
-            return;
         }
     }
     public void Sound()
