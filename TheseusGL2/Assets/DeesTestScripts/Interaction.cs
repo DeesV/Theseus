@@ -14,7 +14,7 @@ public class Interaction : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        InteractDetect();
 	}
 
     public void InteractDetect() {
@@ -29,7 +29,7 @@ public class Interaction : MonoBehaviour {
     }
 
     void InteractWeapon() {
-
+        print("WeaponPickup");
     }
 
     void InteractNPC() {
