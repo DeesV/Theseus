@@ -22,13 +22,9 @@ public class SettingsMenu : MonoBehaviour
     public bool inCredits;
 
 
-    /*void Awake()
+    void Awake()
     {
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
-    }*/
-    public void Update()
-    {
-
     }
     public void ActivateSettings()
     {

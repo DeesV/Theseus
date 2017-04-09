@@ -16,13 +16,9 @@ public class PauseMenu : MonoBehaviour {
     public bool inMainMenu;
     public bool inCredits;
 
-    /*void Awake ()
+    void Awake ()
     {
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
-    }*/
-    void Update ()
-    {
-
     }
     //to ingame
     public void ActivateInGame ()
