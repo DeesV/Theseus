@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9e23be2b9a4be254198ab568968e8051
 timeCreated: 1491911277
+=======
+guid: 3c9a8110816bbcf40ad87aec64f57d4a
+timeCreated: 1491592526
+>>>>>>> e5931be5f2ac493b2005125d4d232dd92c8bf5ee
 licenseType: Free
 SpeedTreeImporter:
   serializedVersion: 4

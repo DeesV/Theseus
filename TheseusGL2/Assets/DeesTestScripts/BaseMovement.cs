@@ -7,13 +7,18 @@ public class BaseMovement : MonoBehaviour {
     Rigidbody playerRB;
 
     public float moveSpeed;
+    public float runSpeed;
     public float camSpeed;
     public float jumpCastDistance;
     public float jumpHeigth;
+    public Collider playerCol;
+    public Vector3 crouchHeigth;
 
     // De start roept de player zijn rigidbody op. Mainly bedoeld voor de jump in dit geval.
     void Start() {
         playerRB = transform.GetComponent<Rigidbody>();
+        playerCol = transform.GetComponent<CapsuleCollider>();
+        
     }
 
 	// FixedUpdate die de Movement aanroept
@@ -31,6 +36,13 @@ public class BaseMovement : MonoBehaviour {
         if(Physics.Raycast(transform.position, -transform.up, jumpCastDistance)) {
             if (Input.GetButtonDown("Jump")) {
                 playerRB.velocity = new Vector3(0, jumpHeigth, 0);
+            }
+            if (Input.GetButtonDown("Crouch")) {
+                //playerCol.heigth =- crouchHeigth;
+            }
+            while (Input.GetButton("Run")) {
+                moveSpeed = runSpeed;
+                print(moveSpeed);
             }
         }
 
