@@ -7,6 +7,7 @@ public class BaseMovement : MonoBehaviour {
     Rigidbody playerRB;
 
     public float moveSpeed;
+    public float runSpeed;
     public float camSpeed;
     public float jumpCastDistance;
     public float jumpHeigth;
@@ -36,8 +37,12 @@ public class BaseMovement : MonoBehaviour {
             if (Input.GetButtonDown("Jump")) {
                 playerRB.velocity = new Vector3(0, jumpHeigth, 0);
             }
-            else if (Input.GetButtonDown("Crouch")) {
+            if (Input.GetButtonDown("Crouch")) {
                 //playerCol.heigth =- crouchHeigth;
+            }
+            while (Input.GetButton("Run")) {
+                moveSpeed = runSpeed;
+                print(moveSpeed);
             }
         }
 
