@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour {
     public bool inCredits;
     public bool paused;
     public bool inSettings;
+    public bool toTitleScreen;
 
     void Awake()
     {
@@ -59,9 +60,10 @@ public class UIManager : MonoBehaviour {
         isCursorLocked = false;
         CursorMode();
     }
-    void Start()
+    void Start ()
     {
-
+        CheckGameStatus();
+        CheckSettingPanelStatus();
     }
     void Update()
     {
@@ -108,11 +110,13 @@ public class UIManager : MonoBehaviour {
                 inSettings = false;
                 paused = true;
                 isCursorLocked = false;
+                toTitleScreen = false;
 
                 _PauseMenu.ToPauseMenu();
                 _MainMenu.DeActivateMainMenu();
                 _SettingsMenu.DeActivateSettings();
                 _PauseMenu.DeActivateToMainMenu();
+
 
                 break;
 
@@ -197,7 +201,6 @@ public class UIManager : MonoBehaviour {
 
                 _SettingsMenu.ControlSettings();
 
-
                 break;
 
             case SettingsStatus.GameSettings:
@@ -270,6 +273,7 @@ public class UIManager : MonoBehaviour {
     public void OpenBackToTitleScreenOption()
     {
         _PauseMenu.ActivateToMainMenu();
+        toTitleScreen = true;
     }
     public void BackToTitleScreen()
     {
@@ -290,10 +294,6 @@ public class UIManager : MonoBehaviour {
             _SettingsStatus = SettingsStatus.None;
             CheckSettingPanelStatus();
         }
-        else
-        {
-            return;
-        }
     }
     public void SettingsToPauseMenu()
     {
@@ -305,14 +305,11 @@ public class UIManager : MonoBehaviour {
             CheckSettingPanelStatus();
 
         }
-        else
-        {
-            return;
-        }
     }
     public void ToTitleScreenToPauseMenu()
     {
         _PauseMenu.DeActivateToMainMenu();
+        toTitleScreen = false;
     }
     public void CursorMode()
     {
@@ -324,13 +321,12 @@ public class UIManager : MonoBehaviour {
         {
             Cursor.lockState = CursorLockMode.Confined;
         }
-
     }
     public void PressEscape()
     {
         if(Input.GetButtonDown("Escape"))
         {
-            if (paused == true && inSettings == false)  
+            if (paused == true && inSettings == false && toTitleScreen == false)  
             {
                 _GameStatus = GameStatus.IngameUnpaused;
                 CheckGameStatus();
@@ -344,11 +340,23 @@ public class UIManager : MonoBehaviour {
             {
                 _GameStatus = GameStatus.IngamePaused;
                 CheckGameStatus();
+
+                _SettingsStatus = SettingsStatus.None;
+                CheckSettingPanelStatus();
+            }
+            else if(paused == true && toTitleScreen == true)
+            {
+                _GameStatus = GameStatus.IngamePaused;
+                CheckGameStatus();
             }
             else if(inMainMenu == true && inSettings == true)
             {
                 _GameStatus = GameStatus.Mainmenu;
                 CheckGameStatus();
+
+                _SettingsStatus = SettingsStatus.None;
+                CheckSettingPanelStatus();
+
             }
             else if(inCredits == true)
             {

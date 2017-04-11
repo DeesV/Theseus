@@ -20,16 +20,12 @@ public class MainMenu : MonoBehaviour {
 
     public bool inCredits;
 
-   /* void Awake ()
+    void Awake ()
     {
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
         _Settings = GameObject.Find("Canvas").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-    }*/
-	void Update ()
-    {
-       
-	}
+    }
     public void ActivateMainMenu ()
     {
         if(SceneManager.GetActiveScene().name == "MainMenuTest")
@@ -44,10 +40,6 @@ public class MainMenu : MonoBehaviour {
         /*if (SceneManager.GetActiveScene().name == "InGameTest") //You get the multiple eventsystem stuff again
         {
             SceneManager.LoadScene("MainMenuTest");
-        }
-        else
-        {
-            return;
         }*/
         bgImagePanel.SetActive(true);
         titleScreenPanel.SetActive(true);
@@ -57,7 +49,7 @@ public class MainMenu : MonoBehaviour {
         bgImagePanel.SetActive(false);
         titleScreenPanel.SetActive(false);
     }
-    public void ActivateSettings()
+    public void ActivateSettings ()
     {
         settingsMenuPanel.SetActive(true);
     }
@@ -69,16 +61,12 @@ public class MainMenu : MonoBehaviour {
             bgImagePanel.SetActive(true);
             titleScreenPanel.SetActive(true);
         }
-        else
-        {
-            return;
-        }
     }
     public void ActivateCredits ()
     {
         creditPanel.SetActive(true);
     }
-    public void DeActivateCredits()
+    public void DeActivateCredits ()
     {
         creditPanel.SetActive(false);
     }
