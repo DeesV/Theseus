@@ -6,18 +6,24 @@ public class BaseMovement : MonoBehaviour {
 
     Rigidbody playerRB;
 
-    public float moveSpeed;
-    public float runSpeed;
+    float baseSpeed;
+    float moveSpeed;
+    float runSpeed;
     public float camSpeed;
     public float jumpCastDistance;
     public float jumpHeigth;
     public Collider playerCol;
     public Vector3 crouchHeigth;
+    bool running;
 
     // De start roept de player zijn rigidbody op. Mainly bedoeld voor de jump in dit geval.
     void Start() {
         playerRB = transform.GetComponent<Rigidbody>();
         playerCol = transform.GetComponent<CapsuleCollider>();
+        baseSpeed = 7.5f;
+        moveSpeed = baseSpeed;
+        runSpeed = 30;
+        running = true;
         
     }
 
@@ -38,11 +44,21 @@ public class BaseMovement : MonoBehaviour {
                 playerRB.velocity = new Vector3(0, jumpHeigth, 0);
             }
             if (Input.GetButtonDown("Crouch")) {
-                //playerCol.heigth =- crouchHeigth;
+                //playerCol. =- crouchHeigth;
             }
-            while (Input.GetButton("Run")) {
-                moveSpeed = runSpeed;
-                print(moveSpeed);
+            if (Input.GetButton("Run")) {
+                print("RunButtonIsWorking");
+                if (running == true) {
+                    print("running=TrueWorks");
+                    moveSpeed += runSpeed;
+                    running = false;
+                }
+                else if(running == false) {
+                    print("running=falseWorks");
+                    moveSpeed = baseSpeed;
+                }
+
+
             }
         }
 
