@@ -7,6 +7,9 @@ public class Interaction : MonoBehaviour {
     public float interactDistance;
     RaycastHit interactHit;
 
+    //Arne edited this
+    public NPC _NPC;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -33,6 +36,6 @@ public class Interaction : MonoBehaviour {
     }
 
     void InteractNPC() {
-
+        //_NPC.PlayerInteracts();
     }
 }
