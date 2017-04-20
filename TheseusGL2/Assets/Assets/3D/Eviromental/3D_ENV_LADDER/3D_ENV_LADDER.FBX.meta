@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 265f0c1219d51ea4993dc236d3f6e48b
 timeCreated: 1492689364
+=======
+guid: 956b609f9e9c2c94187ac43362b2824f
+timeCreated: 1492688789
+>>>>>>> cd23bf34556815c63e136587892d404ea973ad4a
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -10,7 +15,10 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Ladder
+<<<<<<< HEAD
     9500000: //RootNode
+=======
+>>>>>>> cd23bf34556815c63e136587892d404ea973ad4a
   materials:
     importMaterials: 1
     materialName: 0
@@ -35,7 +43,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 0
+=======
+    globalScale: 1
+>>>>>>> cd23bf34556815c63e136587892d404ea973ad4a
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -73,7 +85,11 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
   animationType: 2
+=======
+  animationType: 0
+>>>>>>> cd23bf34556815c63e136587892d404ea973ad4a
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
