@@ -36,7 +36,6 @@ public class Player : MonoBehaviour {
     }
 
     void PlayerLevelManager() {
-        print(statScreen);
         statScreen.transform.GetChild(4).GetComponent<Text>().text = playerXP.ToString();
         statScreen.transform.GetChild(5).GetComponent<Text>().text = playerXPNeeded.ToString();
         statScreen.transform.GetChild(3).GetComponent<Text>().text = playerLevel.ToString();

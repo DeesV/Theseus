@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fa7431711d6b9154eb6f23ebdb2fccc1
+=======
+guid: b0a50998d6a450a4b9a6dca3e74edd54
+timeCreated: 1492678477
+licenseType: Free
+>>>>>>> origin/master
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -8,7 +14,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Ladder
-    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -33,7 +38,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -71,7 +76,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

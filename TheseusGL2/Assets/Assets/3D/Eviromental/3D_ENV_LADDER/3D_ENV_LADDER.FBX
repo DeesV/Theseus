@@ -10,11 +10,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2017
 		Month: 4
-		Day: 7
+		Day: 20
 		Hour: 10
-		Minute: 46
-		Second: 21
-		Millisecond: 798
+		Minute: 50
+		Second: 23
+		Millisecond: 24
 	}
 	Creator: "FBX SDK/FBX Plugins version 2015.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -36,13 +36,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2014"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "07/04/2017 08:46:21.797"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "20/04/2017 08:50:23.023"
 			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\3D_ENV_LADDER.FBX"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2014"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "07/04/2017 08:46:21.797"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "20/04/2017 08:50:23.023"
 		}
 	}
 }
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1261106640, "", "Scene" {
+	Document: 1808136240, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -226,7 +226,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 1267801936, "Geometry::", "Mesh" {
+	Geometry: 1262903408, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.650980392156863,0.898039215686275,0.898039215686275
 		}
@@ -293,7 +293,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2437751104, "Model::Ladder", "Mesh" {
+	Model: 1724165008, "Model::Ladder", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
@@ -315,11 +315,11 @@ Objects:  {
 Connections:  {
 	
 	;Model::Ladder, Model::RootNode
-	C: "OO",2437751104,0
+	C: "OO",1724165008,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1261928080,2433054688
+	C: "OO",1797197440,1795868368
 	
 	;Geometry::, Model::Ladder
-	C: "OO",1267801936,2437751104
+	C: "OO",1262903408,1724165008
 }
