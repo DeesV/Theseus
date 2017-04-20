@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: b7320445c74041c41b02302c1ca90746
-=======
-guid: f2b3a1a4ac617b944ad818afc312b8f7
->>>>>>> 0cbf6c5c438880fc2598318597e766b5f1adb65f
 SpeedTreeImporter:
   serializedVersion: 4
   mainColor: {r: 1, g: 1, b: 1, a: 1}
