@@ -15,6 +15,7 @@ public class BaseMovement : MonoBehaviour {
     public Collider playerCol;
     public Vector3 crouchHeigth;
     bool running;
+    public Animator playerAnim;
 
     // De start roept de player zijn rigidbody op. Mainly bedoeld voor de jump in dit geval.
     void Start() {
@@ -24,7 +25,8 @@ public class BaseMovement : MonoBehaviour {
         moveSpeed = baseSpeed;
         runSpeed = 30;
         running = true;
-        
+        playerAnim.SetBool("Walking", true);
+
     }
 
 	// FixedUpdate die de Movement aanroept
@@ -37,6 +39,8 @@ public class BaseMovement : MonoBehaviour {
 
         transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed);
         transform.Rotate(0, Input.GetAxis("Mouse X") * Time.deltaTime * camSpeed, 0);
+        //playerAnim.SetBool("Walking", true);
+
 
 
         if(Physics.Raycast(transform.position, -transform.up, jumpCastDistance)) {
