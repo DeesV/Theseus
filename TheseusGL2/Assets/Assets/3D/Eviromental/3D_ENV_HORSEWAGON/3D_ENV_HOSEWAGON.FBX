@@ -11,10 +11,10 @@ FBXHeaderExtension:  {
 		Year: 2017
 		Month: 4
 		Day: 20
-		Hour: 10
-		Minute: 49
-		Second: 28
-		Millisecond: 140
+		Hour: 13
+		Minute: 39
+		Second: 24
+		Millisecond: 465
 	}
 	Creator: "FBX SDK/FBX Plugins version 2015.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -30,19 +30,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_HORSEWAGON.FBX"
-			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_HORSEWAGON.FBX"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_HOSEWAGON.FBX"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_HOSEWAGON.FBX"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2014"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "20/04/2017 08:49:28.139"
-			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\3D_ENV_HORSEWAGON.FBX"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "20/04/2017 11:39:24.465"
+			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\3D_ENV_HOSEWAGON.FBX"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2014"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "20/04/2017 08:49:28.139"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "20/04/2017 11:39:24.465"
 		}
 	}
 }
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2220062464, "", "Scene" {
+	Document: 1076986576, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -255,7 +255,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2228229024, "Geometry::", "Mesh" {
+	Geometry: 1981111376, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.0901960784313725,0.00392156862745098,0.192156862745098
 		}
@@ -369,7 +369,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228231744, "Geometry::", "Mesh" {
+	Geometry: 1981124432, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.894117647058823,0.72156862745098,0.6
 		}
@@ -445,7 +445,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228228480, "Geometry::", "Mesh" {
+	Geometry: 1981129328, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.349019607843137,0.694117647058824
 		}
@@ -540,7 +540,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228226848, "Geometry::", "Mesh" {
+	Geometry: 1981133680, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.529411764705882,0.231372549019608,0.0313725490196078
 		}
@@ -607,7 +607,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228229568, "Geometry::", "Mesh" {
+	Geometry: 1981127696, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.56078431372549,0.882352941176471,0.341176470588235
 		}
@@ -679,7 +679,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228230112, "Geometry::", "Mesh" {
+	Geometry: 1981137488, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.56078431372549,0.882352941176471,0.341176470588235
 		}
@@ -789,7 +789,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228233920, "Geometry::", "Mesh" {
+	Geometry: 1981113008, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.349019607843137,0.694117647058824
 		}
@@ -884,7 +884,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228235552, "Geometry::", "Mesh" {
+	Geometry: 1981131504, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.529411764705882,0.231372549019608,0.0313725490196078
 		}
@@ -951,7 +951,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228246976, "Geometry::", "Mesh" {
+	Geometry: 1981144016, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.56078431372549,0.882352941176471,0.341176470588235
 		}
@@ -1023,7 +1023,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228271456, "Geometry::", "Mesh" {
+	Geometry: 1981134768, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.349019607843137,0.694117647058824
 		}
@@ -1118,7 +1118,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228256768, "Geometry::", "Mesh" {
+	Geometry: 1981123344, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.529411764705882,0.231372549019608,0.0313725490196078
 		}
@@ -1185,7 +1185,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228244800, "Geometry::", "Mesh" {
+	Geometry: 1981136400, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.56078431372549,0.882352941176471,0.341176470588235
 		}
@@ -1257,7 +1257,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228268192, "Geometry::", "Mesh" {
+	Geometry: 1981132592, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.349019607843137,0.694117647058824
 		}
@@ -1352,7 +1352,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228264928, "Geometry::", "Mesh" {
+	Geometry: 1981133136, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.529411764705882,0.231372549019608,0.0313725490196078
 		}
@@ -1419,7 +1419,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228270912, "Geometry::", "Mesh" {
+	Geometry: 1981141296, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.56078431372549,0.882352941176471,0.341176470588235
 		}
@@ -1491,7 +1491,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 2228249152, "Geometry::", "Mesh" {
+	Geometry: 1981136944, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.6,0.894117647058823,0.72156862745098
 		}
@@ -1554,7 +1554,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2028795616, "Model::wagon", "Mesh" {
+	Model: 1971510752, "Model::wagon", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
@@ -1569,7 +1569,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028804384, "Model::frame", "Mesh" {
+	Model: 1971488832, "Model::frame", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1582,7 +1582,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028815344, "Model::weelcap", "Mesh" {
+	Model: 1971512944, "Model::weelcap", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1597,7 +1597,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028791232, "Model::spaken", "Mesh" {
+	Model: 1971495408, "Model::spaken", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1611,7 +1611,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028808768, "Model::weels", "Mesh" {
+	Model: 1971515136, "Model::weels", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1625,7 +1625,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028806576, "Model::framelocks", "Mesh" {
+	Model: 1971499792, "Model::framelocks", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1639,7 +1639,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028789040, "Model::weelcap001", "Mesh" {
+	Model: 1971504176, "Model::weelcap001", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1654,7 +1654,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028793424, "Model::spaken001", "Mesh" {
+	Model: 1981222000, "Model::spaken001", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1668,7 +1668,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028786848, "Model::weels001", "Mesh" {
+	Model: 1981248304, "Model::weels001", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1682,7 +1682,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028810960, "Model::weelcap002", "Mesh" {
+	Model: 1981246112, "Model::weelcap002", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1697,7 +1697,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028802192, "Model::spaken002", "Mesh" {
+	Model: 1981241728, "Model::spaken002", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1711,7 +1711,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028819728, "Model::weels002", "Mesh" {
+	Model: 1981230768, "Model::weels002", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1725,7 +1725,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028817536, "Model::weelcap003", "Mesh" {
+	Model: 1981226384, "Model::weelcap003", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1740,7 +1740,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028828496, "Model::spaken003", "Mesh" {
+	Model: 1981239536, "Model::spaken003", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1754,7 +1754,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028813152, "Model::weels003", "Mesh" {
+	Model: 1981243920, "Model::weels003", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1768,7 +1768,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2028821920, "Model::steunbalk", "Mesh" {
+	Model: 1981224192, "Model::steunbalk", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -1781,7 +1781,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 1809021168, "Material::wagon", "" {
+	Material: 553951088, "Material::wagon", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1803,7 +1803,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1809014928, "Material::frame", "" {
+	Material: 553955888, "Material::frame", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1825,7 +1825,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1809015888, "Material::weelcap", "" {
+	Material: 553949648, "Material::weelcap", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1847,7 +1847,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1809020688, "Material::spaken", "" {
+	Material: 553949168, "Material::spaken", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1869,7 +1869,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1809016848, "Material::weels", "" {
+	Material: 553950128, "Material::weels", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1891,7 +1891,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1809013968, "Material::frameholder", "" {
+	Material: 553952528, "Material::frameholder", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1913,7 +1913,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1809018768, "Material::steunbalk", "" {
+	Material: 553952048, "Material::steunbalk", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -1943,149 +1943,149 @@ Objects:  {
 Connections:  {
 	
 	;Model::wagon, Model::RootNode
-	C: "OO",2028795616,0
+	C: "OO",1971510752,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1718356592,1798548176
+	C: "OO",1970897792,1806388048
 	
 	;Model::frame, Model::wagon
-	C: "OO",2028804384,2028795616
+	C: "OO",1971488832,1971510752
 	
 	;Model::steunbalk, Model::wagon
-	C: "OO",2028821920,2028795616
+	C: "OO",1981224192,1971510752
 	
 	;Geometry::, Model::wagon
-	C: "OO",2228229024,2028795616
+	C: "OO",1981111376,1971510752
 	
 	;Material::wagon, Model::wagon
-	C: "OO",1809021168,2028795616
+	C: "OO",553951088,1971510752
 	
 	;Model::weelcap, Model::frame
-	C: "OO",2028815344,2028804384
+	C: "OO",1971512944,1971488832
 	
 	;Model::framelocks, Model::frame
-	C: "OO",2028806576,2028804384
+	C: "OO",1971499792,1971488832
 	
 	;Model::weelcap001, Model::frame
-	C: "OO",2028789040,2028804384
+	C: "OO",1971504176,1971488832
 	
 	;Model::weelcap002, Model::frame
-	C: "OO",2028810960,2028804384
+	C: "OO",1981246112,1971488832
 	
 	;Model::weelcap003, Model::frame
-	C: "OO",2028817536,2028804384
+	C: "OO",1981226384,1971488832
 	
 	;Geometry::, Model::frame
-	C: "OO",2228231744,2028804384
+	C: "OO",1981124432,1971488832
 	
 	;Material::frame, Model::frame
-	C: "OO",1809014928,2028804384
+	C: "OO",553955888,1971488832
 	
 	;Model::spaken, Model::weelcap
-	C: "OO",2028791232,2028815344
+	C: "OO",1971495408,1971512944
 	
 	;Geometry::, Model::weelcap
-	C: "OO",2228228480,2028815344
+	C: "OO",1981129328,1971512944
 	
 	;Material::weelcap, Model::weelcap
-	C: "OO",1809015888,2028815344
+	C: "OO",553949648,1971512944
 	
 	;Model::weels, Model::spaken
-	C: "OO",2028808768,2028791232
+	C: "OO",1971515136,1971495408
 	
 	;Geometry::, Model::spaken
-	C: "OO",2228226848,2028791232
+	C: "OO",1981133680,1971495408
 	
 	;Material::spaken, Model::spaken
-	C: "OO",1809020688,2028791232
+	C: "OO",553949168,1971495408
 	
 	;Geometry::, Model::weels
-	C: "OO",2228229568,2028808768
+	C: "OO",1981127696,1971515136
 	
 	;Material::weels, Model::weels
-	C: "OO",1809016848,2028808768
+	C: "OO",553950128,1971515136
 	
 	;Geometry::, Model::framelocks
-	C: "OO",2228230112,2028806576
+	C: "OO",1981137488,1971499792
 	
 	;Material::frameholder, Model::framelocks
-	C: "OO",1809013968,2028806576
+	C: "OO",553952528,1971499792
 	
 	;Model::spaken001, Model::weelcap001
-	C: "OO",2028793424,2028789040
+	C: "OO",1981222000,1971504176
 	
 	;Geometry::, Model::weelcap001
-	C: "OO",2228233920,2028789040
+	C: "OO",1981113008,1971504176
 	
 	;Material::weelcap, Model::weelcap001
-	C: "OO",1809015888,2028789040
+	C: "OO",553949648,1971504176
 	
 	;Model::weels001, Model::spaken001
-	C: "OO",2028786848,2028793424
+	C: "OO",1981248304,1981222000
 	
 	;Geometry::, Model::spaken001
-	C: "OO",2228235552,2028793424
+	C: "OO",1981131504,1981222000
 	
 	;Material::spaken, Model::spaken001
-	C: "OO",1809020688,2028793424
+	C: "OO",553949168,1981222000
 	
 	;Geometry::, Model::weels001
-	C: "OO",2228246976,2028786848
+	C: "OO",1981144016,1981248304
 	
 	;Material::weels, Model::weels001
-	C: "OO",1809016848,2028786848
+	C: "OO",553950128,1981248304
 	
 	;Model::spaken002, Model::weelcap002
-	C: "OO",2028802192,2028810960
+	C: "OO",1981241728,1981246112
 	
 	;Geometry::, Model::weelcap002
-	C: "OO",2228271456,2028810960
+	C: "OO",1981134768,1981246112
 	
 	;Material::weelcap, Model::weelcap002
-	C: "OO",1809015888,2028810960
+	C: "OO",553949648,1981246112
 	
 	;Model::weels002, Model::spaken002
-	C: "OO",2028819728,2028802192
+	C: "OO",1981230768,1981241728
 	
 	;Geometry::, Model::spaken002
-	C: "OO",2228256768,2028802192
+	C: "OO",1981123344,1981241728
 	
 	;Material::spaken, Model::spaken002
-	C: "OO",1809020688,2028802192
+	C: "OO",553949168,1981241728
 	
 	;Geometry::, Model::weels002
-	C: "OO",2228244800,2028819728
+	C: "OO",1981136400,1981230768
 	
 	;Material::weels, Model::weels002
-	C: "OO",1809016848,2028819728
+	C: "OO",553950128,1981230768
 	
 	;Model::spaken003, Model::weelcap003
-	C: "OO",2028828496,2028817536
+	C: "OO",1981239536,1981226384
 	
 	;Geometry::, Model::weelcap003
-	C: "OO",2228268192,2028817536
+	C: "OO",1981132592,1981226384
 	
 	;Material::weelcap, Model::weelcap003
-	C: "OO",1809015888,2028817536
+	C: "OO",553949648,1981226384
 	
 	;Model::weels003, Model::spaken003
-	C: "OO",2028813152,2028828496
+	C: "OO",1981243920,1981239536
 	
 	;Geometry::, Model::spaken003
-	C: "OO",2228264928,2028828496
+	C: "OO",1981133136,1981239536
 	
 	;Material::spaken, Model::spaken003
-	C: "OO",1809020688,2028828496
+	C: "OO",553949168,1981239536
 	
 	;Geometry::, Model::weels003
-	C: "OO",2228270912,2028813152
+	C: "OO",1981141296,1981243920
 	
 	;Material::weels, Model::weels003
-	C: "OO",1809016848,2028813152
+	C: "OO",553950128,1981243920
 	
 	;Geometry::, Model::steunbalk
-	C: "OO",2228249152,2028821920
+	C: "OO",1981136944,1981224192
 	
 	;Material::steunbalk, Model::steunbalk
-	C: "OO",1809018768,2028821920
+	C: "OO",553952048,1981224192
 }

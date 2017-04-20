@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 96a75bf6ea3fe5d4d889e7f804857416
-=======
 guid: be43297ef5959c749a390a743aff3c2c
->>>>>>> origin/master
 SpeedTreeImporter:
   serializedVersion: 4
   mainColor: {r: 1, g: 1, b: 1, a: 1}
