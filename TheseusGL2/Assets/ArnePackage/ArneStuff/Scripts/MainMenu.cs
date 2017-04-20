@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("InGameTest");
+            SceneManager.LoadScene("Sandbox");
             Time.timeScale = 1;
         }
         /*if (SceneManager.GetActiveScene().name == "InGameTest") //You get the multiple eventsystem stuff again
