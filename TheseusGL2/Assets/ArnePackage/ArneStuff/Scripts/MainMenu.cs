@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Made by Arne
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -34,7 +35,7 @@ public class MainMenu : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("Sandbox");
+            SceneManager.LoadScene("Test Arne Sandbox"); //InGameTest
             Time.timeScale = 1;
         }
         /*if (SceneManager.GetActiveScene().name == "InGameTest") //You get the multiple eventsystem stuff again

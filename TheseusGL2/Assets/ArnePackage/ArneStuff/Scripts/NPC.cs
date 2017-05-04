@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Made by Arne
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,10 +41,11 @@ public class NPC : MonoBehaviour
     {
         if(playerInSight == false)
         {
-            return;
+
         }
-        if(playerInSight == true)
-        { 
-}
+        if (playerInSight == true)
+        {
+
+        }
     }
 }

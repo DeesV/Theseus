@@ -1,11 +1,23 @@
-﻿using System.Collections;
+﻿//Made by Arne
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
+    /*          NOTES   
 
+        Make loadingscreen!
+        
+        Get the scripts on the GameManager!
+
+
+
+
+
+
+    */
     [Header("-Different menus")]
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
@@ -13,6 +25,9 @@ public class UIManager : MonoBehaviour {
     public GameObject mainMenuPanel;
     public GameObject creditPanel;
     public GameObject toMainMenuOptionPanel;
+
+    public GameObject stats;
+    public GameObject lvlUP;
 
     [Header("-Settings panels")]
     public GameObject soundOptionsPanel;
@@ -26,7 +41,7 @@ public class UIManager : MonoBehaviour {
 
 
     //Game Status Enum(Switch)
-    public enum GameStatus { Mainmenu, Ingame, IngamePaused, IngameUnpaused, Credits, MainMenuSettings, IngameSettings };
+    public enum GameStatus { Mainmenu, Loading, Ingame, IngamePaused, IngameUnpaused, Credits, MainMenuSettings, IngameSettings };
     public GameStatus _GameStatus;
 
     //Settings Status Enum(switch)
@@ -38,6 +53,7 @@ public class UIManager : MonoBehaviour {
     public SettingsMenu _SettingsMenu;
     public PauseMenu _PauseMenu;
     public UIManager _UIManager;
+    public LoadController _LoadController;
 
     [Header("GameManager Object")]
     public GameObject gameManager;
@@ -49,26 +65,30 @@ public class UIManager : MonoBehaviour {
     public bool paused;
     public bool inSettings;
     public bool toTitleScreen;
+    public bool loading;
 
     void Awake()
     {
-        _MainMenu = GameObject.Find("Canvas").GetComponent<MainMenu>();
+        _MainMenu = GameObject.Find("Canvas").GetComponent<MainMenu>(); 
         _SettingsMenu = GameObject.Find("Canvas").GetComponent<SettingsMenu>();
         _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
         _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+        _LoadController = GameObject.Find("Canvas").GetComponent<LoadController>();
 
         isCursorLocked = false;
-        CursorMode();
+        //CursorMode();
     }
     void Start ()
     {
+        stats.SetActive(false);
+        lvlUP.SetActive(false);
         CheckGameStatus();
         CheckSettingPanelStatus();
     }
     void Update()
     {
         PressEscape();
-        CursorMode();
+        //CursorMode();
     }
     public void CheckGameStatus()
     {
@@ -81,12 +101,27 @@ public class UIManager : MonoBehaviour {
                 inCredits = false;
                 inSettings = false;
                 paused = false;
+                loading = false;
                 isCursorLocked = false;
+
 
                 _MainMenu.ActivateMainMenu();
                 _MainMenu.DeActivateSettings();
                 _MainMenu.DeActivateCredits();
                 _PauseMenu.DeActivateInGame();
+
+                break;
+
+            case GameStatus.Loading:
+
+                inMainMenu = false;
+                inCredits = false;
+                inSettings = false;
+                paused = false;
+                loading = true;
+                isCursorLocked = false;
+
+                //_LoadController.
 
                 break;
 
@@ -96,6 +131,7 @@ public class UIManager : MonoBehaviour {
                 inCredits = false;
                 inSettings = false;
                 paused = false;
+                loading = false;
                 isCursorLocked = true;
 
                 _PauseMenu.ActivateInGame();
@@ -109,6 +145,7 @@ public class UIManager : MonoBehaviour {
                 inCredits = false;
                 inSettings = false;
                 paused = true;
+                loading = false;
                 isCursorLocked = false;
                 toTitleScreen = false;
 
@@ -126,13 +163,13 @@ public class UIManager : MonoBehaviour {
                 inCredits = false;
                 inSettings = false;
                 paused = false;
+                loading = false;
                 isCursorLocked = true;
 
                 _PauseMenu.ResumeIngame();
                 _MainMenu.DeActivateMainMenu();
                 _SettingsMenu.DeActivateSettings();
 
-                isCursorLocked = false;
 
                 break;
 
@@ -142,6 +179,7 @@ public class UIManager : MonoBehaviour {
                 inCredits = true;
                 inSettings = false;
                 paused = false;
+                loading = false;
                 isCursorLocked = false;
 
                 _MainMenu.ActivateCredits();
@@ -154,6 +192,7 @@ public class UIManager : MonoBehaviour {
                 inCredits = false;
                 inSettings = true;
                 paused = false;
+                loading = false;
                 isCursorLocked = false;
 
                 _MainMenu.ActivateSettings();
@@ -167,6 +206,7 @@ public class UIManager : MonoBehaviour {
                 inCredits = false;
                 inSettings = true;
                 paused = true;
+                loading = false;
                 isCursorLocked = false;
 
                 _SettingsMenu.ActivateSettings();
@@ -213,7 +253,7 @@ public class UIManager : MonoBehaviour {
     }
     public void StartGame()
     {
-        _GameStatus = GameStatus.Ingame;
+        _GameStatus = GameStatus.Loading;
         CheckGameStatus();
     }
     public void MainMenuSettings()
@@ -311,7 +351,7 @@ public class UIManager : MonoBehaviour {
         _PauseMenu.DeActivateToMainMenu();
         toTitleScreen = false;
     }
-    public void CursorMode()
+    /*public void CursorMode()
     {
         if (isCursorLocked == true)
         {
@@ -321,7 +361,7 @@ public class UIManager : MonoBehaviour {
         {
             Cursor.lockState = CursorLockMode.Confined;
         }
-    }
+    }*/
     public void PressEscape()
     {
         if(Input.GetButtonDown("Escape"))

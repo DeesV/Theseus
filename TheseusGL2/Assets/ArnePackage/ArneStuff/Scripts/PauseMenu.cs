@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Made by Arne
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,7 +24,7 @@ public class PauseMenu : MonoBehaviour {
     //to ingame
     public void ActivateInGame ()
     {
-        SceneManager.LoadScene("InGameTest");
+        SceneManager.LoadScene("Test Arne Sandbox"); //InGameTest
         hudPanel.SetActive(true);
         pauseMenuPanel.SetActive(false);
     }
