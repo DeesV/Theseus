@@ -16,32 +16,18 @@ public class MainMenu : MonoBehaviour {
 
     [Header("-Game Status")]
     public UIManager _UIManager;
-    public SettingsMenu _Settings;
-    public PauseMenu _PauseMenu;
 
-    public bool inCredits;
 
     void Awake ()
     {
-        _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
-        _Settings = GameObject.Find("Canvas").GetComponent<SettingsMenu>();
-        _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
+        _UIManager = UIManager.instance;
     }
     public void ActivateMainMenu ()
     {
-        if(SceneManager.GetActiveScene().name == "MainMenuTest")
-        {
-            return;
-        }
-        else
-        {
-            SceneManager.LoadScene("Test Arne Sandbox"); //InGameTest
-            Time.timeScale = 1;
-        }
-        /*if (SceneManager.GetActiveScene().name == "InGameTest") //You get the multiple eventsystem stuff again
+        if(SceneManager.GetActiveScene().name == "Test Arne Sandbox") //Test Arne Sandbox //InGameTest
         {
             SceneManager.LoadScene("MainMenuTest");
-        }*/
+        }
         bgImagePanel.SetActive(true);
         titleScreenPanel.SetActive(true);
     }

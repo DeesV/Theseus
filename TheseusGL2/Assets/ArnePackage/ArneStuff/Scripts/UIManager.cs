@@ -8,11 +8,35 @@ public class UIManager : MonoBehaviour {
 
     /*          NOTES   
 
+        When you load a scene the script starts again
+        In mainMenu and PauseMenu is a function that changes the scene(from mainmenu->ingame and ingame->mainmenu
+
+        MAKE GOOD PREFAB
         Make loadingscreen!
         
         Get the scripts on the GameManager!
 
+    
 
+
+        uimanager = referentie static naar zichzelf
+        gooi alle variabelen van UI er van tevoren in, sinds er geen switching van scenes is
+        1 void overload functie voor elk item wat je aan / uit wilt zetten, in de ui buttons zelf kan je hem overloaden
+        met 1 ui object
+        die functie is letterlijk: zet alles uit, zet daarna overloaded item aan
+
+        //ipv voor elke menuitem een aan uit voor alles custom maken
+        List<Transform> all gameobjectus
+        EnableMenuItem(Transform enable)
+            EnableMenuItem(new List<Transform> {enable })
+        een functie EnableMenuItem(List<Transform> enables)
+            
+            disable all
+            enable those
+
+
+                BUGS
+        Awake function makes the script turn off
 
 
 
@@ -22,7 +46,7 @@ public class UIManager : MonoBehaviour {
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
-    public GameObject mainMenuPanel;
+    public GameObject titleScreenPanel;
     public GameObject creditPanel;
     public GameObject toMainMenuOptionPanel;
 
@@ -48,15 +72,13 @@ public class UIManager : MonoBehaviour {
     public enum SettingsStatus { None, Sound, Keybindings, ControlSettings, GameSettings };
     public SettingsStatus _SettingsStatus;
 
-    [Header("-Script Shortcuts")]
-    public MainMenu _MainMenu;
-    public SettingsMenu _SettingsMenu;
-    public PauseMenu _PauseMenu;
-    public UIManager _UIManager;
-    public LoadController _LoadController;
+    public static MainMenu _MainMenu;
+    public static SettingsMenu _SettingsMenu;
+    public static PauseMenu _PauseMenu;
+    public static UIManager _UIManager;
+    public static LoadController _LoadController;
 
-    [Header("GameManager Object")]
-    public GameObject gameManager;
+    public static GameObject gameManager;
     public GameObject canvas;
 
     [Header("Menus Activated")]
@@ -67,14 +89,28 @@ public class UIManager : MonoBehaviour {
     public bool toTitleScreen;
     public bool loading;
 
+    //static reference
+    public static UIManager instance;
+
+    /*
+    uimanager = referentie static naar zichzelf
+    gooi alle variabelen van UI er van tevoren in, sinds er geen switching van scenes is
+    1 void overload functie voor elk item wat je aan / uit wilt zetten, in de ui buttons zelf kan je hem overloaden
+    met 1 ui object
+    die functie is letterlijk: zet alles uit, zet daarna overloaded item aan
+    */
+
     void Awake()
     {
-        _MainMenu = GameObject.Find("Canvas").GetComponent<MainMenu>(); 
-        _SettingsMenu = GameObject.Find("Canvas").GetComponent<SettingsMenu>();
-        _PauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-        _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
-        _LoadController = GameObject.Find("Canvas").GetComponent<LoadController>();
+        instance = this;
+        gameManager = GameObject.FindWithTag("GameManager");
 
+        _MainMenu = gameManager.GetComponent<MainMenu>(); 
+        _SettingsMenu = gameManager.GetComponent<SettingsMenu>();
+        _PauseMenu = gameManager.GetComponent<PauseMenu>();
+        _UIManager = GetComponent<UIManager>();
+        _LoadController = gameManager.GetComponent<LoadController>();
+        
         isCursorLocked = false;
         //CursorMode();
     }
@@ -103,7 +139,6 @@ public class UIManager : MonoBehaviour {
                 paused = false;
                 loading = false;
                 isCursorLocked = false;
-
 
                 _MainMenu.ActivateMainMenu();
                 _MainMenu.DeActivateSettings();
@@ -136,6 +171,7 @@ public class UIManager : MonoBehaviour {
 
                 _PauseMenu.ActivateInGame();
                 _MainMenu.DeActivateMainMenu();
+                
 
                 break;
 
@@ -210,6 +246,7 @@ public class UIManager : MonoBehaviour {
                 isCursorLocked = false;
 
                 _SettingsMenu.ActivateSettings();
+                _MainMenu.DeActivateMainMenu();
 
                 break;
         }
@@ -253,7 +290,7 @@ public class UIManager : MonoBehaviour {
     }
     public void StartGame()
     {
-        _GameStatus = GameStatus.Loading;
+        _GameStatus = GameStatus.Ingame;
         CheckGameStatus();
     }
     public void MainMenuSettings()
@@ -351,6 +388,10 @@ public class UIManager : MonoBehaviour {
         _PauseMenu.DeActivateToMainMenu();
         toTitleScreen = false;
     }
+    public void LoadingDone ()
+    {
+
+    }
     /*public void CursorMode()
     {
         if (isCursorLocked == true)
@@ -371,7 +412,7 @@ public class UIManager : MonoBehaviour {
                 _GameStatus = GameStatus.IngameUnpaused;
                 CheckGameStatus();
             }
-            else if (inMainMenu == false && paused == false)
+            else if (inMainMenu == false && paused == false && loading == false)
             {
                 _GameStatus = GameStatus.IngamePaused;
                 CheckGameStatus();

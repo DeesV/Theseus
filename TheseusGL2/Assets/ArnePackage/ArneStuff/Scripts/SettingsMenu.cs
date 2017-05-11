@@ -20,8 +20,6 @@ public class SettingsMenu : MonoBehaviour
 
     public UIManager _UIManager;
 
-    public bool inCredits;
-
 
     void Awake()
     {
@@ -31,6 +29,7 @@ public class SettingsMenu : MonoBehaviour
     {
         settingsMenuPanel.SetActive(true);
         hudPanel.SetActive(false);
+        Time.timeScale = 0; //To set time to 0 when you open the scene in ingameSettings
     }
     public void DeActivateSettings()
     {

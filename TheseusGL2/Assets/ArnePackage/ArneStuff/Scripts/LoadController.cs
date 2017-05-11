@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadController : MonoBehaviour {
 
@@ -10,18 +11,32 @@ public class LoadController : MonoBehaviour {
 
     public GameObject loadingScreen;
 
+    public Slider loadSlider;
+
+    public UIManager _UIManager;
 
 
+    void Start ()
+    {
+        _UIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+    }
     void Update ()
     {
-        //is the loadbar full
+   
     }
-    public void LoadScene ()
+    public void LoadScene (string sceneName)
     {
 
     }
     public void IsSceneReady ()
     {
-
+        while(async.isDone == false)
+        {
+            loadSlider.value = async.progress;
+        }
+        if(async.isDone == true)
+        {
+            _UIManager.LoadingDone();
+        }
     }
 }

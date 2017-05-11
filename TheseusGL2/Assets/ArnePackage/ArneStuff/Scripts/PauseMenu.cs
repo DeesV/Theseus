@@ -9,13 +9,11 @@ public class PauseMenu : MonoBehaviour {
     public GameObject pauseMenuPanel;
     public GameObject hudPanel;
     public GameObject settingsMenuPanel;
-    public GameObject mainMenuPanel;
-    public GameObject toMainMenuOptionPanel;
+    public GameObject titleScreenPanel;
+    public GameObject MainMenuPanel;
 
     public UIManager _UIManager;
 
-    public bool inMainMenu;
-    public bool inCredits;
 
     void Awake ()
     {
@@ -24,7 +22,10 @@ public class PauseMenu : MonoBehaviour {
     //to ingame
     public void ActivateInGame ()
     {
-        SceneManager.LoadScene("Test Arne Sandbox"); //InGameTest
+        if (SceneManager.GetActiveScene().name == "MainMenuTest")
+        {
+            SceneManager.LoadScene("Test Arne Sandbox"); //InGameTest
+        }//    Test Arne Sandbox
         hudPanel.SetActive(true);
         pauseMenuPanel.SetActive(false);
     }
@@ -33,8 +34,8 @@ public class PauseMenu : MonoBehaviour {
     {
         hudPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
-        toMainMenuOptionPanel.SetActive(false);
-        SceneManager.LoadScene("MainMenuTest");  //CAUSES A ERROR WHEN ACTIVATED; MULTIPLE EVENTSYSTEMS IN SCENE, THIS IS NOT SUPPORTED.
+        MainMenuPanel.SetActive(false);
+        //SceneManager.LoadScene("MainMenuTest");  //CAUSES A ERROR WHEN ACTIVATED; MULTIPLE EVENTSYSTEMS IN SCENE, THIS IS NOT SUPPORTED.
     }
     public void ResumeIngame ()
     {
@@ -49,12 +50,12 @@ public class PauseMenu : MonoBehaviour {
     }
     public void ActivateToMainMenu ()
     {
-        toMainMenuOptionPanel.SetActive(true);
+        MainMenuPanel.SetActive(true);
         pauseMenuPanel.SetActive(false);
     }
     public void DeActivateToMainMenu ()
     {
         pauseMenuPanel.SetActive(true);
-        toMainMenuOptionPanel.SetActive(false);
+        MainMenuPanel.SetActive(false);
     }
 }
