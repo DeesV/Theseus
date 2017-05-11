@@ -13,7 +13,6 @@ public class Interaction : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        interactRC = Physics.Raycast(transform.position, transform.forward, out interactHit, interactDistance);
 
     }
 	
@@ -24,7 +23,7 @@ public class Interaction : MonoBehaviour {
 
     public void InteractDetect() {
         Debug.DrawRay(transform.position, transform.forward, Color.green);
-        if (interactRC) {
+        if (Physics.Raycast(transform.position, transform.forward, out interactHit, interactDistance)){
             if(interactHit.transform.tag == "InteractableSword") {
                 InteractWeapon();
             }
@@ -35,7 +34,10 @@ public class Interaction : MonoBehaviour {
     }
 
     void InteractWeapon() {
-        print("WeaponPickup");
+        if (Input.GetButtonDown("Interact")) {
+            print("PickedUp!");
+        }
+        print("Weapon!");
     }
 
     void InteractNPC() {

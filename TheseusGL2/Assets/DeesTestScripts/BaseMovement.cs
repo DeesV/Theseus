@@ -25,7 +25,7 @@ public class BaseMovement : MonoBehaviour {
         moveSpeed = baseSpeed;
         runSpeed = 30;
         running = true;
-        playerAnim.SetBool("Walking", true);
+        
 
     }
 
